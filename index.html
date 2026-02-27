@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Workout Timer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#121212;--surface:#1e1e1e;--surface2:#2a2a2a;--accent:#4fc3f7;--accent2:#81c784;--danger:#ef5350;--text:#e0e0e0;--text2:#9e9e9e;--radius:12px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+.tabs{display:flex;position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:2px solid var(--surface2)}
+.tab{flex:1;padding:14px 8px;text-align:center;font-size:14px;font-weight:600;color:var(--text2);border:none;background:none;cursor:pointer;transition:.2s}
+.tab.active{color:var(--accent);border-bottom:3px solid var(--accent)}
+.page{display:none;padding:16px;max-width:500px;margin:0 auto}
+.page.active{display:block}
+h2{font-size:20px;margin-bottom:16px;color:var(--accent)}
+h3{font-size:16px;margin:12px 0 8px;color:var(--text2)}
+.timer-display{font-size:96px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums;padding:24px 0;letter-spacing:-2px}
+.timer-display.running{color:var(--accent)}
+.timer-display.warning{color:#ffa726}
+.timer-display.done{color:var(--accent2);animation:pulse .5s 3}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:12px 0}
+.btn{padding:16px 24px;border:none;border-radius:var(--radius);font-size:18px;font-weight:600;cursor:pointer;transition:.15s;min-width:70px;touch-action:manipulation}
+.btn-preset{background:var(--surface2);color:var(--text)}
+.btn-preset.active{background:var(--accent);color:#000}
+.btn-start{background:var(--accent2);color:#000;font-size:22px;padding:18px 48px}
+.btn-stop{background:var(--danger);color:#fff;font-size:22px;padding:18px 48px}
+.btn-sm{padding:10px 16px;font-size:14px}
+.exercise-input{display:flex;align-items:center;gap:12px;margin:16px 0}
+.exercise-input input{background:var(--surface2);border:2px solid var(--surface2);color:var(--text);font-size:24px;width:100px;text-align:center;padding:12px;border-radius:var(--radius);-moz-appearance:textfield}
+.exercise-input input::-webkit-inner-spin-button{-webkit-appearance:none}
+.exercise-input label{font-size:18px;color:var(--text2)}
+.quick-btns{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}
+.quick-btns .btn{padding:10px 14px;font-size:14px;background:var(--surface2);color:var(--text)}
+.progress-bar{height:6px;background:var(--surface2);border-radius:3px;margin:8px 0 16px;overflow:hidden}
+.progress-bar .fill{height:100%;background:var(--accent);transition:width .3s linear;border-radius:3px}
+.day-selector{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:16px}
+.day-btn{padding:12px 16px;border:2px solid var(--surface2);border-radius:var(--radius);background:var(--surface);color:var(--text);font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;flex-shrink:0}
+.day-btn.active{border-color:var(--accent);color:var(--accent)}
+.exercise-card{background:var(--surface);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.exercise-card .name{font-size:16px;font-weight:600;margin-bottom:4px}
+.exercise-card .detail{font-size:13px;color:var(--text2);margin-bottom:8px}
+.sets-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.set-btn{width:44px;height:44px;border-radius:50%;border:2px solid var(--surface2);background:none;color:var(--text2);font-size:14px;font-weight:600;cursor:pointer;transition:.15s}
+.set-btn.done{background:var(--accent2);border-color:var(--accent2);color:#000}
+.weight-input{background:var(--surface2);border:none;color:var(--text);font-size:14px;width:64px;padding:8px;border-radius:8px;text-align:center;margin-left:auto}
+.finisher{background:var(--surface);border-left:3px solid #ffa726;border-radius:0 var(--radius) var(--radius) 0;padding:12px;margin-bottom:10px}
+.finisher .name{font-size:14px;font-weight:600;color:#ffa726}
+.finisher .detail{font-size:13px;color:var(--text2);margin-top:4px}
+.section-label{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--text2);margin:16px 0 8px;font-weight:600}
+.cues-info{background:var(--surface);border-radius:var(--radius);padding:12px;margin:12px 0;font-size:13px;color:var(--text2);line-height:1.6}
+.cues-info span{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="tabs">
+<button class="tab active" onclick="showPage('rest')">Rest</button>
+<button class="tab" onclick="showPage('exercise')">Exercise</button>
+<button class="tab" onclick="showPage('workout')">Workout</button>
+</div>
+
+<div id="rest" class="page active">
+<h2>Rest Timer</h2>
+<div class="timer-display" id="restDisplay">0:00</div>
+<div class="progress-bar"><div class="fill" id="restProgress" style="width:0"></div></div>
+<div class="btn-row">
+<button class="btn btn-preset" onclick="setRest(60)">1:00</button>
+<button class="btn btn-preset" onclick="setRest(90)">1:30</button>
+<button class="btn btn-preset" onclick="setRest(120)">2:00</button>
+<button class="btn btn-preset" onclick="setRest(180)">3:00</button>
+</div>
+<div class="btn-row" id="restControls">
+<button class="btn btn-start" id="restStartBtn" onclick="toggleRest()">START</button>
+</div>
+</div>
+
+<div id="exercise" class="page">
+<h2>Exercise Timer</h2>
+<div class="timer-display" id="exDisplay">0:00</div>
+<div class="progress-bar"><div class="fill" id="exProgress" style="width:0"></div></div>
+<div class="exercise-input">
+<label>Duration:</label>
+<button class="btn btn-sm" onclick="adjEx(-5)">−5</button>
+<input type="number" id="exSeconds" value="30" min="5" max="300">
+<button class="btn btn-sm" onclick="adjEx(5)">+5</button>
+<label>sec</label>
+</div>
+<div class="quick-btns">
+<button class="btn" onclick="setEx(20)">20s</button>
+<button class="btn" onclick="setEx(30)">30s</button>
+<button class="btn" onclick="setEx(40)">40s</button>
+<button class="btn" onclick="setEx(60)">1min</button>
+<button class="btn" onclick="setEx(90)">1:30</button>
+</div>
+<div class="cues-info">Audio cues: <span>halfway</span> · <span>10s left</span> · <span>done</span></div>
+<div class="btn-row">
+<button class="btn btn-start" id="exStartBtn" onclick="toggleEx()">START</button>
+</div>
+</div>
+
+<div id="workout" class="page">
+<h2>Workout Tracker</h2>
+<div class="day-selector" id="daySelector"></div>
+<div id="workoutContent"></div>
+</div>
+
+<script>
+// Wake Lock - keep screen on
+let wakeLock=null;
+async function requestWakeLock(){try{wakeLock=await navigator.wakeLock.request('screen');wakeLock.addEventListener('release',()=>{wakeLock=null})}catch(e){}}
+requestWakeLock();
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')requestWakeLock()});
+
+// Audio
+const AC=new(window.AudioContext||window.webkitAudioContext)();
+function beep(freq,dur,type='sine'){const o=AC.createOscillator(),g=AC.createGain();o.type=type;o.frequency.value=freq;g.gain.value=0.3;o.connect(g);g.connect(AC.destination);o.start();g.gain.exponentialRampToValueAtTime(0.001,AC.currentTime+dur);o.stop(AC.currentTime+dur)}
+function doneBeep(){beep(880,.15);setTimeout(()=>beep(1100,.15),180);setTimeout(()=>beep(1320,.25),360)}
+function halfBeep(){beep(660,.12);setTimeout(()=>beep(660,.12),150)}
+function warnBeep(){beep(440,.1)}
+function vib(ms){navigator.vibrate&&navigator.vibrate(ms)}
+
+function fmt(s){const m=Math.floor(s/60);return m+':'+(s%60<10?'0':'')+s%60}
+
+// Rest Timer
+let restTotal=90,restLeft=0,restRunning=false,restInterval=null;
+function setRest(s){restTotal=s;restLeft=s;restRunning=false;clearInterval(restInterval);
+document.getElementById('restDisplay').textContent=fmt(s);document.getElementById('restDisplay').className='timer-display';
+document.getElementById('restProgress').style.width='100%';document.getElementById('restStartBtn').textContent='START';document.getElementById('restStartBtn').className='btn btn-start';
+document.querySelectorAll('.btn-preset').forEach(b=>b.classList.toggle('active',parseInt(b.textContent.replace(':',''))===(Math.floor(s/60)*100+s%60)||b.textContent===fmt(s)))}
+function toggleRest(){AC.resume();if(restRunning){restRunning=false;clearInterval(restInterval);document.getElementById('restStartBtn').textContent='RESUME';document.getElementById('restStartBtn').className='btn btn-start';return}
+if(restLeft<=0)restLeft=restTotal;restRunning=true;document.getElementById('restStartBtn').textContent='PAUSE';document.getElementById('restStartBtn').className='btn btn-stop';
+restInterval=setInterval(()=>{restLeft--;if(restLeft<=0){restLeft=0;restRunning=false;clearInterval(restInterval);doneBeep();vib([200,100,200,100,400]);document.getElementById('restDisplay').className='timer-display done';document.getElementById('restStartBtn').textContent='START';document.getElementById('restStartBtn').className='btn btn-start'}else if(restLeft<=5){document.getElementById('restDisplay').className='timer-display warning'}else{document.getElementById('restDisplay').className='timer-display running'}
+document.getElementById('restDisplay').textContent=fmt(restLeft);document.getElementById('restProgress').style.width=(restLeft/restTotal*100)+'%'},1000)}
+setRest(90);
+
+// Exercise Timer
+let exTotal=30,exLeft=0,exRunning=false,exInterval=null,exHalfFired,exWarnFired;
+function setEx(s){document.getElementById('exSeconds').value=s;exTotal=s;exLeft=0;exRunning=false;clearInterval(exInterval);document.getElementById('exDisplay').textContent=fmt(s);document.getElementById('exDisplay').className='timer-display';document.getElementById('exProgress').style.width='100%';document.getElementById('exStartBtn').textContent='START';document.getElementById('exStartBtn').className='btn btn-start'}
+function adjEx(d){const inp=document.getElementById('exSeconds');let v=Math.max(5,Math.min(300,parseInt(inp.value)+d));inp.value=v;if(!exRunning){exTotal=v;document.getElementById('exDisplay').textContent=fmt(v)}}
+function toggleEx(){AC.resume();if(exRunning){exRunning=false;clearInterval(exInterval);document.getElementById('exStartBtn').textContent='RESUME';document.getElementById('exStartBtn').className='btn btn-start';return}
+exTotal=parseInt(document.getElementById('exSeconds').value);if(exLeft<=0){exLeft=exTotal;exHalfFired=false;exWarnFired=false}
+exRunning=true;document.getElementById('exStartBtn').textContent='PAUSE';document.getElementById('exStartBtn').className='btn btn-stop';
+exInterval=setInterval(()=>{exLeft--;const elapsed=exTotal-exLeft;
+if(!exHalfFired&&elapsed>=Math.floor(exTotal/2)){exHalfFired=true;halfBeep();vib(100)}
+if(!exWarnFired&&exLeft<=10&&exLeft>0){exWarnFired=true;warnBeep();vib(100)}
+if(exLeft<=0){exLeft=0;exRunning=false;clearInterval(exInterval);doneBeep();vib([200,100,200,100,400]);document.getElementById('exDisplay').className='timer-display done';document.getElementById('exStartBtn').textContent='START';document.getElementById('exStartBtn').className='btn btn-start'}else if(exLeft<=10){document.getElementById('exDisplay').className='timer-display warning'}else{document.getElementById('exDisplay').className='timer-display running'}
+document.getElementById('exDisplay').textContent=fmt(exLeft);document.getElementById('exProgress').style.width=(exLeft/exTotal*100)+'%'},1000)}
+
+// Workout Data
+const DAYS=[
+{name:'Day 1 Mon',title:'Upper Push+Pull',exercises:[
+{n:'Bench Press',sets:4,reps:'6-8'},{n:'Pull-Ups / Lat Pulldown',sets:4,reps:'8-10'},
+{n:'Incline DB Press',sets:3,reps:'10'},{n:'One-Arm DB Row',sets:3,reps:'10/side'},
+{n:'Lateral Raises',sets:3,reps:'12',superset:'Push-Ups max'}],
+finisher:'8min Battle Ropes: 30s on / 30s off'},
+{name:'Day 2 Tue',title:'Lower Body',exercises:[
+{n:'Back Squat',sets:4,reps:'6-8'},{n:'Walking Lunges',sets:3,reps:'10/leg'},
+{n:'Leg Curl',sets:3,reps:'12'},{n:'Leg Extension',sets:3,reps:'12'},
+{n:'Hip Thrust',sets:3,reps:'10'}],
+finisher:'10min: Sled Push 30s / Farmer Walk 30s'},
+{name:'Day 3 Wed',title:'Conditioning',exercises:[
+{n:'KB Swings',sets:5,reps:'15',circuit:true},{n:'Box Jumps',sets:5,reps:'8',circuit:true},
+{n:'Push-Ups',sets:5,reps:'15',circuit:true},{n:'TRX Rows',sets:5,reps:'12',circuit:true},
+{n:'Jump Rope',sets:5,reps:'1min',circuit:true}],
+core:[{n:'Med Ball Slams',sets:3,reps:'15'},{n:'Russian Twists',sets:3,reps:'20'}],
+finisher:null},
+{name:'Day 4 Thu',title:'Upper Body',exercises:[
+{n:'Incline Bench',sets:4,reps:'8-10'},{n:'Seated Cable Row',sets:4,reps:'10-12'},
+{n:'Shoulder Press',sets:3,reps:'10'},{n:'Chest Fly',sets:3,reps:'12'},
+{n:'Face Pulls',sets:3,reps:'15',superset:'Hammer Curls 3x12'}],
+finisher:'Burpees: 10/min × 8min'},
+{name:'Day 5 Fri',title:'Lower Body + Conditioning',exercises:[
+{n:'Deadlift',sets:4,reps:'5'},{n:'Front/Goblet Squat',sets:3,reps:'10'},
+{n:'Step-Ups',sets:3,reps:'10/leg'},{n:'Calf Raises',sets:3,reps:'15'}],
+finisher:'3-4 rounds: Sled push 20-30s, Battle ropes 30s, Mountain climbers 40s'}
+];
+
+let currentDay=0,tracker={};
+try{tracker=JSON.parse(localStorage.getItem('workoutTracker')||'{}')}catch(e){}
+function saveTracker(){localStorage.setItem('workoutTracker',JSON.stringify(tracker))}
+function getKey(day,ex,field){return day+':'+ex+':'+field}
+
+function renderDays(){const sel=document.getElementById('daySelector');
+DAYS.forEach((d,i)=>{const b=document.createElement('button');b.className='day-btn'+(i===currentDay?' active':'');b.textContent=d.name;b.onclick=()=>{currentDay=i;renderDays();renderWorkout()};sel.appendChild(b)})}
+function renderWorkout(){const c=document.getElementById('workoutContent');const d=DAYS[currentDay];let h='<h3>'+d.title+'</h3>';
+if(d.exercises[0]&&d.exercises[0].circuit)h+='<div class="section-label">Circuit (4-5 rounds)</div>';
+d.exercises.forEach(ex=>{h+=renderExCard(ex,currentDay)});
+if(d.core){h+='<div class="section-label">Core (3 rounds)</div>';d.core.forEach(ex=>{h+=renderExCard(ex,currentDay)})}
+if(d.finisher)h+='<div class="finisher"><div class="name">🔥 Finisher</div><div class="detail">'+d.finisher+'</div></div>';
+c.innerHTML=h}
+function renderExCard(ex,day){const k=getKey(day,ex.n,'');
+let s='<div class="exercise-card"><div class="name">'+ex.n+(ex.superset?' <span style="color:var(--text2);font-size:13px">+ '+ex.superset+'</span>':'')+'</div>';
+s+='<div class="detail">'+ex.sets+'×'+ex.reps+'</div><div class="sets-row">';
+for(let i=0;i<ex.sets;i++){const done=tracker[k+'set'+i];s+='<button class="set-btn'+(done?' done':'')+'" onclick="toggleSet('+day+',\''+ex.n.replace(/'/g,"\\'")+'\','+i+')">'+(i+1)+'</button>'}
+const w=tracker[k+'weight']||'';s+='<input class="weight-input" type="number" placeholder="lbs" value="'+w+'" onchange="setWeight('+day+',\''+ex.n.replace(/'/g,"\\'")+'\',this.value)"></div></div>';
+return s}
+function toggleSet(day,name,i){const k=getKey(day,name,'set'+i);tracker[k]=!tracker[k];saveTracker();vib(30);renderWorkout()}
+function setWeight(day,name,v){tracker[getKey(day,name,'weight')]=v;saveTracker()}
+
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');
+document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',['rest','exercise','workout'][i]===id))}
+
+// Auto-select today's workout
+const dow=new Date().getDay();if(dow>=1&&dow<=5)currentDay=dow-1;
+renderDays();renderWorkout();
+</script>
+</body>
+</html>
