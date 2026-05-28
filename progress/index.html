@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workout</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    margin: 0; background: #0f1115; color: #e6e8eb;
+  }
+  header {
+    padding: 16px 20px; border-bottom: 1px solid #1f242c;
+    display: flex; align-items: baseline; gap: 16px;
+  }
+  header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  header .sub { color: #8b94a3; font-size: 13px; }
+  nav { display: flex; gap: 6px; padding: 12px 20px; border-bottom: 1px solid #1f242c; }
+  nav button {
+    background: transparent; color: #8b94a3; border: 1px solid #1f242c;
+    padding: 6px 14px; border-radius: 20px; font-size: 13px; cursor: pointer;
+  }
+  nav button.active { color: #e6e8eb; background: #1f242c; border-color: #2a313b; }
+  main { padding: 20px; max-width: 980px; margin: 0 auto; }
+
+  .card { background: #161a21; border: 1px solid #1f242c; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+  .card h2 { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+  .focus { color: #8b94a3; font-size: 13px; margin-bottom: 12px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 8px 6px; text-align: left; border-bottom: 1px solid #1f242c; }
+  th { color: #8b94a3; font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td.target { color: #8b94a3; }
+  td.last { color: #5bd6a0; }
+  td.last.stale { color: #d6a25b; }
+  td.last.cold { color: #8b94a3; }
+
+  .session { padding: 12px 0; border-bottom: 1px solid #1f242c; }
+  .session:last-child { border-bottom: none; }
+  .session .head { display: flex; justify-content: space-between; font-size: 13px; color: #8b94a3; margin-bottom: 4px; }
+  .session .label { color: #e6e8eb; font-weight: 500; }
+  .session .ex { font-size: 13px; color: #c5cbd5; margin-left: 0; }
+  .session .ex .name { color: #e6e8eb; }
+  .session .ex .sets { color: #8b94a3; }
+
+  .exercise-card { cursor: pointer; }
+  .exercise-card:hover { border-color: #2a313b; }
+  .ex-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 6px 0;
+  }
+  .ex-row .name { font-weight: 500; }
+  .ex-row .latest { color: #5bd6a0; font-size: 13px; }
+  .ex-row .latest.cold { color: #8b94a3; }
+  .ex-row .date { color: #8b94a3; font-size: 12px; margin-left: 6px; }
+
+  .chart { margin-top: 12px; }
+  svg { width: 100%; height: 160px; }
+  .axis text { fill: #8b94a3; font-size: 10px; }
+  .axis line { stroke: #1f242c; }
+  .line { fill: none; stroke: #5bd6a0; stroke-width: 2; }
+  .dot { fill: #5bd6a0; }
+
+  .empty { color: #8b94a3; font-size: 13px; padding: 20px; text-align: center; }
+
+  details { margin-top: 8px; }
+  details summary { cursor: pointer; color: #8b94a3; font-size: 13px; }
+  details .hist { font-size: 12px; color: #c5cbd5; padding: 6px 0 0; }
+  details .hist .row { padding: 3px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>💪 Workout</h1>
+  <span class="sub" id="today-sub">…</span>
+</header>
+<nav>
+  <button data-tab="today" class="active">Today</button>
+  <button data-tab="exercises">Exercises</button>
+  <button data-tab="recent">Recent</button>
+</nav>
+<main id="main">Loading…</main>
+
+<script>
+let PLAN = null, LOG = null;
+
+async function load() {
+  const [plan, log] = await Promise.all([
+    fetch('./data/plan.json').then(r => r.json()),
+    fetch('./data/log.json').then(r => r.json()),
+  ]);
+  PLAN = plan; LOG = log;
+  render();
+}
+
+function todayKey() {
+  const d = new Date();
+  const days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+  return days[d.getDay()];
+}
+
+function todayDay() {
+  const dayId = PLAN.schedule[todayKey()];
+  return { dayId, day: PLAN.days[dayId], weekday: todayKey() };
+}
+
+// Find latest set for an exercise id, across all sessions
+function latest(id) {
+  for (let i = LOG.sessions.length - 1; i >= 0; i--) {
+    const s = LOG.sessions[i];
+    for (const ex of s.exercises) {
+      if (ex.id === id) {
+        return { session: s, ex };
+      }
+    }
+  }
+  return null;
+}
+
+function history(id, n = null) {
+  const out = [];
+  for (let i = LOG.sessions.length - 1; i >= 0; i--) {
+    const s = LOG.sessions[i];
+    for (const ex of s.exercises) {
+      if (ex.id === id) out.push({ date: s.date, ex });
+    }
+  }
+  return n ? out.slice(0, n) : out;
+}
+
+function topSet(ex) {
+  if (!ex.sets || !ex.sets.length) return null;
+  // Top set = max weight, then max reps
+  let best = ex.sets[0];
+  for (const s of ex.sets) {
+    if ((s.weight || 0) > (best.weight || 0)) best = s;
+    else if ((s.weight || 0) === (best.weight || 0) && (s.reps || 0) > (best.reps || 0)) best = s;
+  }
+  return best;
+}
+
+function summarizeSets(ex) {
+  if (!ex.sets || !ex.sets.length) return '—';
+  // Group identical sets
+  const groups = [];
+  for (const s of ex.sets) {
+    const last = groups[groups.length - 1];
+    if (last && last.weight === s.weight && last.reps === s.reps && last.unit === s.unit) {
+      last.count++;
+    } else {
+      groups.push({ weight: s.weight, reps: s.reps, unit: s.unit, count: 1 });
+    }
+  }
+  return groups.map(g => {
+    const w = (g.weight === 0 || g.weight == null) ? 'bw' : `${g.weight}${g.unit || 'lbs'}`;
+    return g.count > 1 ? `${w}×${g.reps}×${g.count}` : `${w}×${g.reps}`;
+  }).join(' / ');
+}
+
+function daysAgo(iso) {
+  const d = new Date(iso + 'T12:00:00');
+  const now = new Date();
+  return Math.floor((now - d) / 86400000);
+}
+
+function fmtAge(d) {
+  if (d === 0) return 'today';
+  if (d === 1) return '1d ago';
+  if (d < 14) return `${d}d ago`;
+  if (d < 60) return `${Math.floor(d/7)}w ago`;
+  return `${Math.floor(d/30)}mo ago`;
+}
+
+function renderToday() {
+  const { dayId, day, weekday } = todayDay();
+  document.getElementById('today-sub').textContent =
+    `${new Date().toLocaleDateString('en-US', { weekday:'long', month:'short', day:'numeric' })} · ${day.name}`;
+
+  let html = `<div class="card"><h2>${day.name}</h2>`;
+  if (day.focus) html += `<div class="focus">${day.focus}</div>`;
+  if (day.rest) {
+    html += `<div class="empty">Rest day — recovery</div></div>`;
+    return html;
+  }
+  html += `<table><thead><tr><th>Exercise</th><th>Target</th><th>Last</th></tr></thead><tbody>`;
+  for (const ex of day.exercises || []) {
+    const last = latest(ex.id);
+    let lastTxt = '—', cls = 'cold', age = '';
+    if (last) {
+      lastTxt = summarizeSets(last.ex);
+      const d = daysAgo(last.session.date);
+      age = ` <span style="color:#5d6573">(${fmtAge(d)})</span>`;
+      cls = d <= 14 ? '' : (d <= 30 ? 'stale' : 'cold');
+    }
+    html += `<tr>
+      <td>${ex.name}</td>
+      <td class="target">${ex.sets}×${ex.reps}</td>
+      <td class="last ${cls}">${lastTxt}${age}</td>
+    </tr>`;
+  }
+  html += `</tbody></table></div>`;
+  return html;
+}
+
+function renderExercises() {
+  // Collect all unique exercise ids with metadata
+  const map = {};
+  for (const s of LOG.sessions) {
+    for (const ex of s.exercises) {
+      if (!map[ex.id]) map[ex.id] = { id: ex.id, name: ex.name, latest: { date: s.date, ex }, count: 0 };
+      map[ex.id].count++;
+      if (s.date >= map[ex.id].latest.date) map[ex.id].latest = { date: s.date, ex };
+    }
+  }
+  const items = Object.values(map).sort((a, b) => b.latest.date.localeCompare(a.latest.date));
+
+  let html = '';
+  for (const it of items) {
+    const top = topSet(it.latest.ex);
+    const d = daysAgo(it.latest.date);
+    const cls = d <= 14 ? '' : (d <= 30 ? 'stale' : 'cold');
+    html += `<div class="card exercise-card" onclick="toggleEx('${it.id}')">
+      <div class="ex-row">
+        <span class="name">${it.name}</span>
+        <span class="latest ${cls}">${summarizeSets(it.latest.ex)} <span class="date">${fmtAge(d)} · ${it.count} sessions</span></span>
+      </div>
+      <div id="ex-${it.id}" style="display:none"></div>
+    </div>`;
+  }
+  return html;
+}
+
+function toggleEx(id) {
+  const el = document.getElementById('ex-' + id);
+  if (!el) return;
+  if (el.style.display === 'none') {
+    el.innerHTML = renderExHistory(id);
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function renderExHistory(id) {
+  const hist = history(id);
+  if (!hist.length) return '<div class="empty">No history</div>';
+
+  // Build chart data: date → top set weight
+  const points = hist.map(h => {
+    const t = topSet(h.ex);
+    return { date: h.date, weight: t?.weight || 0, reps: t?.reps || 0, unit: t?.unit || 'lbs' };
+  }).filter(p => p.weight > 0).reverse();
+
+  let chart = '';
+  if (points.length >= 2) {
+    const W = 600, H = 140, PAD = 30;
+    const minW = Math.min(...points.map(p => p.weight));
+    const maxW = Math.max(...points.map(p => p.weight));
+    const range = Math.max(1, maxW - minW);
+    const xs = points.map((p, i) => PAD + (i / (points.length - 1)) * (W - 2 * PAD));
+    const ys = points.map(p => H - PAD - ((p.weight - minW) / range) * (H - 2 * PAD));
+    const path = xs.map((x, i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${ys[i].toFixed(1)}`).join(' ');
+    const dots = xs.map((x, i) => `<circle class="dot" cx="${x.toFixed(1)}" cy="${ys[i].toFixed(1)}" r="3"><title>${points[i].date}: ${points[i].weight}${points[i].unit} × ${points[i].reps}</title></circle>`).join('');
+    chart = `<div class="chart">
+      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">
+        <text class="axis" x="${PAD-4}" y="${PAD+4}" text-anchor="end" style="fill:#8b94a3;font-size:10px">${maxW}</text>
+        <text class="axis" x="${PAD-4}" y="${H-PAD+4}" text-anchor="end" style="fill:#8b94a3;font-size:10px">${minW}</text>
+        <line x1="${PAD}" y1="${PAD}" x2="${PAD}" y2="${H-PAD}" stroke="#1f242c" />
+        <line x1="${PAD}" y1="${H-PAD}" x2="${W-PAD/2}" y2="${H-PAD}" stroke="#1f242c" />
+        <path class="line" d="${path}" />
+        ${dots}
+      </svg>
+    </div>`;
+  }
+
+  let rows = '<div class="hist">';
+  for (const h of hist) {
+    rows += `<div class="row"><b>${h.date}</b> · ${summarizeSets(h.ex)}${h.ex.note ? ` <span style="color:#8b94a3">— ${h.ex.note}</span>` : ''}</div>`;
+  }
+  rows += '</div>';
+
+  return chart + rows;
+}
+
+function renderRecent() {
+  const sessions = [...LOG.sessions].reverse().slice(0, 30);
+  let html = '<div class="card">';
+  for (const s of sessions) {
+    const d = daysAgo(s.date);
+    html += `<div class="session">
+      <div class="head">
+        <span><span class="label">${s.label || s.day_id}</span> · ${s.weekday || ''}</span>
+        <span>${s.date} · ${fmtAge(d)}</span>
+      </div>`;
+    for (const ex of s.exercises) {
+      html += `<div class="ex"><span class="name">${ex.name}</span> <span class="sets">${summarizeSets(ex)}</span>${ex.note ? ` <span style="color:#8b94a3">— ${ex.note}</span>` : ''}</div>`;
+    }
+    if (s.notes) html += `<div class="ex" style="color:#8b94a3;margin-top:4px">${s.notes}</div>`;
+    html += `</div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+function render() {
+  const tab = document.querySelector('nav button.active').dataset.tab;
+  const main = document.getElementById('main');
+  if (tab === 'today') main.innerHTML = renderToday();
+  else if (tab === 'exercises') main.innerHTML = renderExercises();
+  else if (tab === 'recent') main.innerHTML = renderRecent();
+}
+
+document.querySelectorAll('nav button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('nav button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    render();
+  });
+});
+
+load().catch(e => {
+  document.getElementById('main').innerHTML = `<div class="empty">Error: ${e.message}</div>`;
+});
+</script>
+</body>
+</html>
