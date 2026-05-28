@@ -7,10 +7,104 @@
       "day_id": "upper",
       "label": "Day 1 Upper Body",
       "exercises": [
-        {"id": "bench_press", "name": "Bench Press", "sets": [{"weight": 85, "unit": "lbs", "reps": 8}, {"weight": 85, "unit": "lbs", "reps": 8}, {"weight": 85, "unit": "lbs", "reps": 8}, {"weight": 85, "unit": "lbs", "reps": 8}], "note": "首次杠铃卧推，正好力竭"},
-        {"id": "lat_pulldown", "name": "Lat Pulldown", "sets": [{"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}], "note": "较轻，下次加重"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 8}, {"weight": 30, "unit": "lbs", "reps": 7}], "note": "上斜比平板弱"},
-        {"id": "one_arm_db_row", "name": "One-Arm DB Row", "sets": [{"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}], "note": "太轻，下次 35-40"}
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "note": "首次杠铃卧推，正好力竭"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "较轻，下次加重"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 7
+            }
+          ],
+          "note": "上斜比平板弱"
+        },
+        {
+          "id": "one_arm_db_row",
+          "name": "One-Arm DB Row",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "太轻，下次 35-40"
+        }
       ],
       "notes": ""
     },
@@ -20,12 +114,136 @@
       "day_id": "upper",
       "label": "Day 4 Upper Body",
       "exercises": [
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}], "note": "较轻，下次改杠铃上斜"},
-        {"id": "seated_cable_row", "name": "Seated Cable Row", "sets": [{"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}, {"weight": 85, "unit": "lbs", "reps": 10}], "note": "窄握，重量合适"},
-        {"id": "shoulder_press_machine", "name": "Shoulder Press (Delts Machine)", "sets": [{"weight": 50, "unit": "lbs", "reps": 10}, {"weight": 50, "unit": "lbs", "reps": 10}, {"weight": 50, "unit": "lbs", "reps": 10}]},
-        {"id": "chest_fly", "name": "Chest Fly (机器)", "sets": [{"weight": 35, "unit": "lbs", "reps": 0, "note": "肩袖不适，下次换 DB 15lbs"}]},
-        {"id": "face_pulls", "name": "Face Pulls", "sets": [{"weight": 25, "unit": "lbs", "reps": 15}, {"weight": 25, "unit": "lbs", "reps": 15}, {"weight": 25, "unit": "lbs", "reps": 15}], "note": "偏重身体后仰，下次降到 15-20"},
-        {"id": "hammer_curl", "name": "Hammer Curls", "sets": [{"weight": 15, "unit": "lbs", "reps": 12}, {"weight": 15, "unit": "lbs", "reps": 12}, {"weight": 15, "unit": "lbs", "reps": 12}]}
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "较轻，下次改杠铃上斜"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Row",
+          "sets": [
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "窄握，重量合适"
+        },
+        {
+          "id": "shoulder_press_machine",
+          "name": "Shoulder Press (Delts Machine)",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "chest_fly",
+          "name": "Chest Fly (机器)",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "肩袖不适，下次换 DB 15lbs"
+            }
+          ]
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "偏重身体后仰，下次降到 15-20"
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        }
       ],
       "notes": ""
     },
@@ -35,10 +253,79 @@
       "day_id": "lower_conditioning",
       "label": "Day 5 Lower Body",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift", "sets": [{"weight": 115, "unit": "lbs", "reps": 5}, {"weight": 115, "unit": "lbs", "reps": 5}, {"weight": 115, "unit": "lbs", "reps": 5}, {"weight": 115, "unit": "lbs", "reps": 5}], "note": "下背微酸，注意姿势"},
-        {"id": "squat", "name": "Goblet Squat", "sets": [{"weight": 16, "unit": "kg", "reps": 10, "note": "壶铃 1 组 + 公寓哑铃补完"}]},
-        {"id": "calf_raises", "name": "Calf Raise", "sets": [{"weight": 0, "unit": "machine", "reps": 0, "note": "器械完成"}]},
-        {"id": "step_ups", "name": "Step-Ups", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 10}, {"weight": 0, "unit": "bodyweight", "reps": 10}, {"weight": 0, "unit": "bodyweight", "reps": 10}], "note": "公寓椅子，每腿"}
+        {
+          "id": "deadlift",
+          "name": "Deadlift",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "下背微酸，注意姿势"
+        },
+        {
+          "id": "squat",
+          "name": "Goblet Squat",
+          "sets": [
+            {
+              "weight": 16,
+              "unit": "kg",
+              "reps": 10,
+              "note": "壶铃 1 组 + 公寓哑铃补完"
+            }
+          ]
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raise",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "machine",
+              "reps": 0,
+              "note": "器械完成"
+            }
+          ]
+        },
+        {
+          "id": "step_ups",
+          "name": "Step-Ups",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 10
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 10
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 10
+            }
+          ],
+          "note": "公寓椅子，每腿"
+        }
       ],
       "notes": "Conditioning: Burpees + Jump Squats + Mountain Climbers × 3 组 + 1 组 Sled Push + 1 组 Battle Rope"
     },
@@ -48,12 +335,150 @@
       "day_id": "upper",
       "label": "Day 1 Upper Body",
       "exercises": [
-        {"id": "bench_press", "name": "Bench Press", "sets": [{"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 95, "unit": "lbs", "reps": 5}, {"weight": 95, "unit": "lbs", "reps": 4}], "note": "从 85 涨到 105"},
-        {"id": "lat_pulldown", "name": "Lat Pulldown", "sets": [{"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}], "note": "85→100，感觉稳"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}]},
-        {"id": "one_arm_db_row", "name": "One-Arm DB Row", "sets": [{"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}], "note": "核心代偿严重"},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": [{"weight": 10, "unit": "lbs", "reps": 12}, {"weight": 10, "unit": "lbs", "reps": 12}, {"weight": 10, "unit": "lbs", "reps": 12}]},
-        {"id": "pushups", "name": "Push-Ups (superset)", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 5}, {"weight": 0, "unit": "bodyweight", "reps": 5}, {"weight": 0, "unit": "bodyweight", "reps": 5}]}
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 4
+            }
+          ],
+          "note": "从 85 涨到 105"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "85→100，感觉稳"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "one_arm_db_row",
+          "name": "One-Arm DB Row",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "核心代偿严重"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "pushups",
+          "name": "Push-Ups (superset)",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 5
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 5
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 5
+            }
+          ]
+        }
       ],
       "notes": ""
     },
@@ -63,11 +488,108 @@
       "day_id": "legs",
       "label": "Day 2 Lower Body",
       "exercises": [
-        {"id": "squat", "name": "Back Squat", "sets": [{"weight": 115, "unit": "lbs", "reps": 8}, {"weight": 115, "unit": "lbs", "reps": 8}, {"weight": 115, "unit": "lbs", "reps": 8}, {"weight": 115, "unit": "lbs", "reps": 8}], "note": "右膝外侧轻微酸胀，可能 IT band"},
-        {"id": "rdl", "name": "Romanian Deadlift", "sets": [{"weight": 115, "unit": "lbs", "reps": 10}, {"weight": 115, "unit": "lbs", "reps": 10}, {"weight": 115, "unit": "lbs", "reps": 10}, {"weight": 115, "unit": "lbs", "reps": 10}]},
-        {"id": "walking_lunges", "name": "Walking Lunges", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "done"}]},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}]},
-        {"id": "plank", "name": "Plank", "sets": [{"weight": 0, "unit": "sec", "reps": 20}, {"weight": 0, "unit": "sec", "reps": 20}]}
+        {
+          "id": "squat",
+          "name": "Back Squat",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "note": "右膝外侧轻微酸胀，可能 IT band"
+        },
+        {
+          "id": "rdl",
+          "name": "Romanian Deadlift",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "walking_lunges",
+          "name": "Walking Lunges",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "done"
+            }
+          ]
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "plank",
+          "name": "Plank",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "sec",
+              "reps": 20
+            },
+            {
+              "weight": 0,
+              "unit": "sec",
+              "reps": 20
+            }
+          ]
+        }
       ],
       "notes": "Squat 和 RDL 都从 95→115。前一晚 5 点多才睡，每组后两眼发黑但完成。"
     },
@@ -77,11 +599,128 @@
       "day_id": "upper",
       "label": "Day 4 Upper Body",
       "exercises": [
-        {"id": "incline_bb_press", "name": "Incline BB Press", "sets": [{"weight": 95, "unit": "lbs", "reps": 7}, {"weight": 95, "unit": "lbs", "reps": 7}, {"weight": 95, "unit": "lbs", "reps": 6}, {"weight": 95, "unit": "lbs", "reps": 4}, {"weight": 95, "unit": "lbs", "reps": 6}]},
-        {"id": "seated_cable_row", "name": "Seated Cable Row", "sets": [{"weight": 100, "unit": "lbs", "reps": 12}, {"weight": 100, "unit": "lbs", "reps": 11}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}], "note": "后面手臂肩代偿"},
-        {"id": "shoulder_press_machine", "name": "Shoulder Press (Delts Machine)", "sets": [{"weight": 60, "unit": "lbs", "reps": 10}, {"weight": 60, "unit": "lbs", "reps": 10}, {"weight": 60, "unit": "lbs", "reps": 10}]},
-        {"id": "chest_fly", "name": "Cable Fly (Freemotion Dual)", "sets": [{"weight": 17, "unit": "lbs/side", "reps": 12}, {"weight": 17, "unit": "lbs/side", "reps": 12}, {"weight": 17, "unit": "lbs/side", "reps": 12}], "note": "高度 6 宽度 5"},
-        {"id": "face_pulls", "name": "Face Pulls", "sets": [{"weight": 20, "unit": "lbs", "reps": 15}, {"weight": 20, "unit": "lbs", "reps": 15}, {"weight": 20, "unit": "lbs", "reps": 15}]}
+        {
+          "id": "incline_bb_press",
+          "name": "Incline BB Press",
+          "sets": [
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 4
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ]
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Row",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 11
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "后面手臂肩代偿"
+        },
+        {
+          "id": "shoulder_press_machine",
+          "name": "Shoulder Press (Delts Machine)",
+          "sets": [
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "chest_fly",
+          "name": "Cable Fly (Freemotion Dual)",
+          "sets": [
+            {
+              "weight": 17,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 17,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 17,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "高度 6 宽度 5"
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        }
       ],
       "notes": "Hammer Curls 待回公寓补。"
     },
@@ -91,10 +730,88 @@
       "day_id": "lower_conditioning",
       "label": "Day 5 Lower Body",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift", "sets": [{"weight": 125, "unit": "lbs", "reps": 8}, {"weight": 125, "unit": "lbs", "reps": 5}, {"weight": 125, "unit": "lbs", "reps": 5}, {"weight": 125, "unit": "lbs", "reps": 5}], "note": "感觉轻松，下次上 135"},
-        {"id": "squat", "name": "Goblet Squat", "sets": [{"weight": 20, "unit": "kg", "reps": 12}, {"weight": 20, "unit": "kg", "reps": 12}, {"weight": 20, "unit": "kg", "reps": 10}]},
-        {"id": "step_ups", "name": "Step-Ups", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "done"}]},
-        {"id": "calf_raises", "name": "Calf Raises", "sets": [{"weight": 35, "unit": "kg", "reps": 15}, {"weight": 35, "unit": "kg", "reps": 15}, {"weight": 35, "unit": "kg", "reps": 15}], "note": "哑铃片"}
+        {
+          "id": "deadlift",
+          "name": "Deadlift",
+          "sets": [
+            {
+              "weight": 125,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 125,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 125,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 125,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "感觉轻松，下次上 135"
+        },
+        {
+          "id": "squat",
+          "name": "Goblet Squat",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "kg",
+              "reps": 12
+            },
+            {
+              "weight": 20,
+              "unit": "kg",
+              "reps": 12
+            },
+            {
+              "weight": 20,
+              "unit": "kg",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "step_ups",
+          "name": "Step-Ups",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "done"
+            }
+          ]
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "kg",
+              "reps": 15
+            },
+            {
+              "weight": 35,
+              "unit": "kg",
+              "reps": 15
+            },
+            {
+              "weight": 35,
+              "unit": "kg",
+              "reps": 15
+            }
+          ],
+          "note": "哑铃片"
+        }
       ],
       "notes": "额外 Sled Push × 3 组 + Mountain Climbers × 1 组。"
     },
@@ -104,9 +821,85 @@
       "day_id": "upper",
       "label": "Day 1 Upper Body",
       "exercises": [
-        {"id": "bench_press", "name": "Bench Press", "sets": [{"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 105, "unit": "lbs", "reps": 6}, {"weight": 105, "unit": "lbs", "reps": 5}]},
-        {"id": "lat_pulldown", "name": "Lat Pulldown", "sets": [{"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}]},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 9}, {"weight": 35, "unit": "lbs", "reps": 5}, {"weight": 35, "unit": "lbs", "reps": 4}], "note": "从 30 加到 35，第一组满 10"}
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ]
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 9
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 4
+            }
+          ],
+          "note": "从 30 加到 35，第一组满 10"
+        }
       ],
       "notes": "Battle Ropes 4 min（健身房关门）。跳过 One-Arm DB Row、Lateral Raises + Push-Ups superset。"
     },
@@ -116,10 +909,94 @@
       "day_id": "legs",
       "label": "Day 2 Lower Body (combo: also Day 4 Upper)",
       "exercises": [
-        {"id": "squat", "name": "Back Squat", "sets": [{"weight": 120, "unit": "lbs", "reps": 8}, {"weight": 120, "unit": "lbs", "reps": 8}, {"weight": 120, "unit": "lbs", "reps": 8}, {"weight": 120, "unit": "lbs", "reps": 8}], "note": "115→120"},
-        {"id": "rdl", "name": "Romanian Deadlift", "sets": [{"weight": 120, "unit": "lbs", "reps": 10}, {"weight": 120, "unit": "lbs", "reps": 10}, {"weight": 120, "unit": "lbs", "reps": 10}, {"weight": 120, "unit": "lbs", "reps": 10}], "note": "115→120"},
-        {"id": "walking_lunges", "name": "Walking Lunges", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "done"}]},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 55, "unit": "lbs", "reps": 12}, {"weight": 55, "unit": "lbs", "reps": 12}, {"weight": 55, "unit": "lbs", "reps": 12}], "note": "50→55"}
+        {
+          "id": "squat",
+          "name": "Back Squat",
+          "sets": [
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "note": "115→120"
+        },
+        {
+          "id": "rdl",
+          "name": "Romanian Deadlift",
+          "sets": [
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 120,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "115→120"
+        },
+        {
+          "id": "walking_lunges",
+          "name": "Walking Lunges",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "done"
+            }
+          ]
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 55,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 55,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 55,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "50→55"
+        }
       ],
       "notes": "Core done。Bike sprints finisher done。两小时全身训练，Upper 部分见 upper-combo session 同日。"
     },
@@ -129,9 +1006,81 @@
       "day_id": "upper",
       "label": "Day 4 Upper (combo: Lower 同日)",
       "exercises": [
-        {"id": "incline_bb_press", "name": "Incline BB Press", "sets": [{"weight": 95, "unit": "lbs", "reps": 8}, {"weight": 95, "unit": "lbs", "reps": 8}, {"weight": 95, "unit": "lbs", "reps": 8}, {"weight": 95, "unit": "lbs", "reps": 8}], "note": "比 2/19 稳"},
-        {"id": "seated_cable_row", "name": "Seated Cable Row", "sets": [{"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}, {"weight": 100, "unit": "lbs", "reps": 10}]},
-        {"id": "shoulder_press_machine", "name": "Shoulder Press (Delts Machine)", "sets": [{"weight": 65, "unit": "lbs", "reps": 10}, {"weight": 65, "unit": "lbs", "reps": 10}, {"weight": 55, "unit": "lbs", "reps": 10}], "note": "60→65"}
+        {
+          "id": "incline_bb_press",
+          "name": "Incline BB Press",
+          "sets": [
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "note": "比 2/19 稳"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Row",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "shoulder_press_machine",
+          "name": "Shoulder Press (Delts Machine)",
+          "sets": [
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 55,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "60→65"
+        }
       ],
       "notes": "跳过 Chest Fly、Face Pulls + Hammer Curls superset、Burpees finisher（健身房关门）。"
     },
@@ -141,9 +1090,75 @@
       "day_id": "upper",
       "label": "Day 4 Upper 补欠 (from 2/26)",
       "exercises": [
-        {"id": "chest_fly", "name": "Chest Fly (cable)", "sets": [{"weight": 20, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 20, "unit": "lbs", "reps": 12}]},
-        {"id": "face_pulls", "name": "Face Pulls", "sets": [{"weight": 25, "unit": "lbs", "reps": 15}, {"weight": 25, "unit": "lbs", "reps": 15}, {"weight": 25, "unit": "lbs", "reps": 15}], "note": "弓步站"},
-        {"id": "hammer_curl", "name": "Hammer Curls", "sets": [{"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 25, "unit": "lbs", "reps": 6}]}
+        {
+          "id": "chest_fly",
+          "name": "Chest Fly (cable)",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "弓步站"
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ]
+        }
       ],
       "notes": "Lower 部分见同日 lower_conditioning session。"
     },
@@ -153,11 +1168,100 @@
       "day_id": "lower_conditioning",
       "label": "Day 5 Lower (公寓)",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift (Smith)", "sets": [{"weight": 100, "unit": "lbs", "reps": 8}, {"weight": 100, "unit": "lbs", "reps": 5}, {"weight": 100, "unit": "lbs", "reps": 5}, {"weight": 100, "unit": "lbs", "reps": 10}], "note": "片重"},
-        {"id": "squat", "name": "Goblet Squat (DB)", "sets": [{"weight": 45, "unit": "lbs", "reps": 12}, {"weight": 45, "unit": "lbs", "reps": 12}, {"weight": 45, "unit": "lbs", "reps": 12}]},
-        {"id": "step_ups", "name": "Step-Ups", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "3 组 + 左腿多 1 组"}]},
-        {"id": "calf_raises", "name": "Calf Raises (DB 站姿)", "sets": [{"weight": 45, "unit": "lbs", "reps": 15}, {"weight": 45, "unit": "lbs", "reps": 15}, {"weight": 45, "unit": "lbs", "reps": 15}], "note": "踩杠铃片"},
-        {"id": "farmers_walk", "name": "Farmer's Walk", "sets": [{"weight": 50, "unit": "lbs/hand", "reps": 0, "note": "太轻，主要练握力"}]}
+        {
+          "id": "deadlift",
+          "name": "Deadlift (Smith)",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "片重"
+        },
+        {
+          "id": "squat",
+          "name": "Goblet Squat (DB)",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "step_ups",
+          "name": "Step-Ups",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "3 组 + 左腿多 1 组"
+            }
+          ]
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises (DB 站姿)",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "踩杠铃片"
+        },
+        {
+          "id": "farmers_walk",
+          "name": "Farmer's Walk",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs/hand",
+              "reps": 0,
+              "note": "太轻，主要练握力"
+            }
+          ]
+        }
       ],
       "notes": "跳过 conditioning circuit finisher（手茧疼）。左右腿不平衡继续关注。"
     },
@@ -167,12 +1271,127 @@
       "day_id": "upper",
       "label": "Day 1 Upper Body",
       "exercises": [
-        {"id": "bench_press", "name": "Bench Press", "sets": [{"weight": 115, "unit": "lbs", "reps": 6}, {"weight": 115, "unit": "lbs", "reps": 5}, {"weight": 115, "unit": "lbs", "reps": 5}, {"weight": 115, "unit": "lbs", "reps": 5}], "note": "不小心装了每边 35，比预期重 10lbs"},
-        {"id": "lat_pulldown", "name": "Lat Pulldown", "sets": [{"weight": 105, "unit": "lbs", "reps": 10}, {"weight": 105, "unit": "lbs", "reps": 10}, {"weight": 105, "unit": "lbs", "reps": 10}, {"weight": 105, "unit": "lbs", "reps": 10}], "note": "100→105"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}], "note": "上次 10/9/5/4，进步明显"},
-        {"id": "one_arm_db_row", "name": "One-Arm DB Row", "sets": [{"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}]},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": [{"weight": 12, "unit": "lbs", "reps": 15}], "note": "10→12"},
-        {"id": "pushups", "name": "Push-Ups (superset)", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "done"}]}
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "不小心装了每边 35，比预期重 10lbs"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 105,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "100→105"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "上次 10/9/5/4，进步明显"
+        },
+        {
+          "id": "one_arm_db_row",
+          "name": "One-Arm DB Row",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 12,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "10→12"
+        },
+        {
+          "id": "pushups",
+          "name": "Push-Ups (superset)",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "done"
+            }
+          ]
+        }
       ],
       "notes": ""
     },
@@ -182,15 +1401,119 @@
       "day_id": "upper",
       "label": "Jeff PT Session: Upper Body Adjustments",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 25, "unit": "lbs/side", "reps": 10}, {"weight": 25, "unit": "lbs/side", "reps": 10}, {"weight": 35, "unit": "lbs/side", "reps": 10}]},
-        {"id": "lat_pulldown", "name": "Lat Pulldown (dual pulley)", "sets": [{"weight": 35, "unit": "lbs", "reps": 0}]},
-        {"id": "dual_pulley_row", "name": "Dual Pulley Row", "sets": [{"weight": 20, "unit": "lbs", "reps": 0}]},
-        {"id": "db_shoulder_press", "name": "Seated DB Shoulder Press", "sets": [{"weight": 15, "unit": "lbs", "reps": 0, "note": "下到 90 度停，垂直往上"}]},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 25, "unit": "lbs", "reps": 0, "note": "20-25 度，顶端哑铃碰一起"}]},
-        {"id": "tricep_extension_machine", "name": "Tricep Arm Extension Machine", "sets": [{"weight": 20, "unit": "lbs", "reps": 0}]},
-        {"id": "tricep_pushdown", "name": "Tricep Pushdown", "sets": [{"weight": 20, "unit": "lbs", "reps": 0, "note": "身体微前倾，离心不抬太高"}]},
-        {"id": "lateral_raises", "name": "Lateral Raise", "sets": [{"weight": 10, "unit": "lbs", "reps": 0, "note": "微弯 elbow，drive elbows out"}]},
-        {"id": "bench_dips", "name": "Bench Dips", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0}]}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown (dual pulley)",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 0
+            }
+          ]
+        },
+        {
+          "id": "dual_pulley_row",
+          "name": "Dual Pulley Row",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 0
+            }
+          ]
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Seated DB Shoulder Press",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "下到 90 度停，垂直往上"
+            }
+          ]
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "20-25 度，顶端哑铃碰一起"
+            }
+          ]
+        },
+        {
+          "id": "tricep_extension_machine",
+          "name": "Tricep Arm Extension Machine",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 0
+            }
+          ]
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Tricep Pushdown",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "身体微前倾，离心不抬太高"
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raise",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "微弯 elbow，drive elbows out"
+            }
+          ]
+        },
+        {
+          "id": "bench_dips",
+          "name": "Bench Dips",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0
+            }
+          ]
+        }
       ],
       "notes": "Jeff 暂停 bench press，改用机器+哑铃单侧训练纠正左右不平衡。推肩不过 90 度保护肩关节。"
     },
@@ -200,12 +1523,145 @@
       "day_id": "upper",
       "label": "Day 4 Upper Body",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}]},
-        {"id": "lat_pulldown", "name": "Lat Pulldown (single pulley)", "sets": [{"weight": 75, "unit": "lbs", "reps": 12}, {"weight": 75, "unit": "lbs", "reps": 12}, {"weight": 75, "unit": "lbs", "reps": 12}]},
-        {"id": "dual_pulley_row", "name": "Dual Pulley Row", "sets": [{"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}]},
-        {"id": "db_shoulder_press", "name": "Seated DB Shoulder Press", "sets": [{"weight": 17.5, "unit": "lbs", "reps": 10}, {"weight": 17.5, "unit": "lbs", "reps": 10}, {"weight": 17.5, "unit": "lbs", "reps": 10}], "note": "不靠椅背，纯肩发力"},
-        {"id": "lateral_raises", "name": "Lateral Raise", "sets": [{"weight": 10, "unit": "lbs", "reps": 10}, {"weight": 10, "unit": "lbs", "reps": 10}, {"weight": 10, "unit": "lbs", "reps": 10}], "note": "慢离心"},
-        {"id": "tricep_pushdown", "name": "Tricep Pushdown (rope)", "sets": [{"weight": 30, "unit": "lbs", "reps": 12}, {"weight": 30, "unit": "lbs", "reps": 10}, {"weight": 30, "unit": "lbs", "reps": 10}], "note": "底部外分挤三头"}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown (single pulley)",
+          "sets": [
+            {
+              "weight": 75,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 75,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 75,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "dual_pulley_row",
+          "name": "Dual Pulley Row",
+          "sets": [
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Seated DB Shoulder Press",
+          "sets": [
+            {
+              "weight": 17.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 17.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 17.5,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "不靠椅背，纯肩发力"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raise",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "慢离心"
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Tricep Pushdown (rope)",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "底部外分挤三头"
+        }
       ],
       "notes": "手腕（右）shoulder press 后开始痛，跳过 incline DB press、arm extension、curl。3/3 滑雪伤，3/12 PT 评估。"
     },
@@ -215,10 +1671,97 @@
       "day_id": "lower_conditioning",
       "label": "Day 5 Lower (公寓健身房)",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift (trap bar)", "sets": [{"weight": 45, "unit": "lbs/side", "reps": 5}, {"weight": 45, "unit": "lbs/side", "reps": 6}, {"weight": 45, "unit": "lbs/side", "reps": 10}, {"weight": 55, "unit": "lbs/side", "reps": 8, "note": "45 偏轻加到 55"}]},
-        {"id": "squat", "name": "Goblet Squat", "sets": [{"weight": 24, "unit": "kg", "reps": 12}, {"weight": 24, "unit": "kg", "reps": 12}, {"weight": 24, "unit": "kg", "reps": 12}]},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 60, "unit": "lbs", "reps": 12}, {"weight": 60, "unit": "lbs", "reps": 10}, {"weight": 60, "unit": "lbs", "reps": 12}], "note": "55→60 进步"},
-        {"id": "calf_raises", "name": "Calf Raises (DB片)", "sets": [{"weight": 45, "unit": "lbs", "reps": 15}, {"weight": 45, "unit": "lbs", "reps": 15}, {"weight": 45, "unit": "lbs", "reps": 15}]}
+        {
+          "id": "deadlift",
+          "name": "Deadlift (trap bar)",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 5
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 6
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 55,
+              "unit": "lbs/side",
+              "reps": 8,
+              "note": "45 偏轻加到 55"
+            }
+          ]
+        },
+        {
+          "id": "squat",
+          "name": "Goblet Squat",
+          "sets": [
+            {
+              "weight": 24,
+              "unit": "kg",
+              "reps": 12
+            },
+            {
+              "weight": 24,
+              "unit": "kg",
+              "reps": 12
+            },
+            {
+              "weight": 24,
+              "unit": "kg",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "55→60 进步"
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises (DB片)",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        }
       ],
       "notes": "公寓健身房关门跳过 conditioning。"
     },
@@ -228,12 +1771,142 @@
       "day_id": "legs",
       "label": "恢复性训练（一周没练）",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift (trap bar)", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 8, "note": "warmup"}, {"weight": 60, "unit": "lbs/side", "reps": 8}, {"weight": 60, "unit": "lbs/side", "reps": 8}]},
-        {"id": "squat", "name": "Back Squat", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 8}, {"weight": 35, "unit": "lbs/side", "reps": 8}, {"weight": 35, "unit": "lbs/side", "reps": 10}], "note": "手腕疼硬撑"},
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 25, "unit": "lbs/side", "reps": 10}, {"weight": 25, "unit": "lbs/side", "reps": 10}, {"weight": 25, "unit": "lbs/side", "reps": 10}], "note": "右手腕推时疼"},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 65, "unit": "lbs", "reps": 12}, {"weight": 65, "unit": "lbs", "reps": 12}, {"weight": 45, "unit": "lbs", "reps": 12, "note": "脚踝松不勾"}, {"weight": 45, "unit": "lbs", "reps": 12}]},
-        {"id": "calf_raises", "name": "Calf Raises", "sets": [{"weight": 50, "unit": "lbs", "reps": 15}, {"weight": 50, "unit": "lbs", "reps": 15}, {"weight": 50, "unit": "lbs", "reps": 15}], "note": "45→50 进步"},
-        {"id": "lat_pulldown", "name": "Lat Pulldown (dual pulley)", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 10}, {"weight": 35, "unit": "lbs/side", "reps": 10}, {"weight": 35, "unit": "lbs/side", "reps": 10}]}
+        {
+          "id": "deadlift",
+          "name": "Deadlift (trap bar)",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 8,
+              "note": "warmup"
+            },
+            {
+              "weight": 60,
+              "unit": "lbs/side",
+              "reps": 8
+            },
+            {
+              "weight": 60,
+              "unit": "lbs/side",
+              "reps": 8
+            }
+          ]
+        },
+        {
+          "id": "squat",
+          "name": "Back Squat",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 8
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 8
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            }
+          ],
+          "note": "手腕疼硬撑"
+        },
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 10
+            }
+          ],
+          "note": "右手腕推时疼"
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "note": "脚踝松不勾"
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "45→50 进步"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown (dual pulley)",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            }
+          ]
+        }
       ],
       "notes": "右手腕（滑雪撞伤 3/2）疼。一周没练力量没掉反而涨。"
     },
@@ -243,12 +1916,118 @@
       "day_id": "upper",
       "label": "Day 1 Upper Body (两周多没练)",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 25, "unit": "lbs/side", "reps": 12}, {"weight": 25, "unit": "lbs/side", "reps": 12}, {"weight": 25, "unit": "lbs/side", "reps": 12}], "note": "轻松，下次 30"},
-        {"id": "lat_pulldown", "name": "Dual Pulley Lat Pulldown", "sets": [{"weight": 42.5, "unit": "lbs/side", "reps": 12}, {"weight": 42.5, "unit": "lbs/side", "reps": 12}, {"weight": 42.5, "unit": "lbs/side", "reps": 12}], "note": "下次 45"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 27.5, "unit": "lbs", "reps": 10}], "note": "下次从 27.5 起步"},
-        {"id": "one_arm_db_row", "name": "One-Arm DB Row", "sets": [{"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 10}], "note": "背发力仍不太好"},
-        {"id": "lateral_raises", "name": "Lateral Raises (superset)", "sets": [{"weight": 10, "unit": "lbs", "reps": 0, "note": "+pushups superset"}]},
-        {"id": "pushups", "name": "Push-Ups (superset)", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 0, "note": "done"}]}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "轻松，下次 30"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Dual Pulley Lat Pulldown",
+          "sets": [
+            {
+              "weight": 42.5,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "下次 45"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "下次从 27.5 起步"
+        },
+        {
+          "id": "one_arm_db_row",
+          "name": "One-Arm DB Row",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "背发力仍不太好"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises (superset)",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 0,
+              "note": "+pushups superset"
+            }
+          ]
+        },
+        {
+          "id": "pushups",
+          "name": "Push-Ups (superset)",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 0,
+              "note": "done"
+            }
+          ]
+        }
       ],
       "notes": "两周多没练，整体状态 OK，多个动作偏轻可加重。"
     },
@@ -258,10 +2037,93 @@
       "day_id": "legs",
       "label": "Lower Body",
       "exercises": [
-        {"id": "squat", "name": "Back Squat", "sets": [{"weight": 135, "unit": "lbs", "reps": 8}, {"weight": 135, "unit": "lbs", "reps": 8}, {"weight": 135, "unit": "lbs", "reps": 8}], "note": "脚尖外转后膝盖不痛"},
-        {"id": "rdl", "name": "RDL", "sets": [{"weight": 135, "unit": "lbs", "reps": 10}, {"weight": 135, "unit": "lbs", "reps": 10}, {"weight": 135, "unit": "lbs", "reps": 10}]},
-        {"id": "walking_lunges", "name": "Walking Lunges", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 20}, {"weight": 0, "unit": "bodyweight", "reps": 20}, {"weight": 0, "unit": "bodyweight", "reps": 20}], "note": "首次做"},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}], "note": "慢离心，脚踝放松"}
+        {
+          "id": "squat",
+          "name": "Back Squat",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "note": "脚尖外转后膝盖不痛"
+        },
+        {
+          "id": "rdl",
+          "name": "RDL",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "walking_lunges",
+          "name": "Walking Lunges",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 20
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 20
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 20
+            }
+          ],
+          "note": "首次做"
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "慢离心，脚踝放松"
+        }
       ],
       "notes": "左膝髌骨内侧痛，调整脚尖外转后缓解。"
     },
@@ -271,15 +2133,203 @@
       "day_id": "lower_conditioning",
       "label": "Lower (Day 5) + Upper modified 同日",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}], "note": "up from 25"},
-        {"id": "tricep_kickback", "name": "Tricep Kickback", "sets": [{"weight": 15, "unit": "lbs", "reps": 12}, {"weight": 15, "unit": "lbs", "reps": 12}, {"weight": 15, "unit": "lbs", "reps": 12}]},
-        {"id": "db_shoulder_press", "name": "Shoulder Press", "sets": [{"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 12}]},
-        {"id": "lateral_raises", "name": "Lateral Raise", "sets": [{"weight": 10, "unit": "lbs", "reps": 12}, {"weight": 10, "unit": "lbs", "reps": 12}, {"weight": 10, "unit": "lbs", "reps": 12}]},
-        {"id": "tricep_pushdown", "name": "Tricep Pushdown", "sets": [{"weight": 30, "unit": "lbs", "reps": 12}, {"weight": 30, "unit": "lbs", "reps": 12}, {"weight": 30, "unit": "lbs", "reps": 12}]},
-        {"id": "overhead_tricep_ext", "name": "Overhead Cable Tricep Extension", "sets": [{"weight": 30, "unit": "lbs", "reps": 12}, {"weight": 30, "unit": "lbs", "reps": 12}, {"weight": 30, "unit": "lbs", "reps": 12}]},
-        {"id": "deadlift", "name": "Deadlift", "sets": [{"weight": 135, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}], "note": "PR vs 125"},
-        {"id": "step_ups", "name": "Step-Ups", "sets": [{"weight": 0, "unit": "bodyweight", "reps": 12}, {"weight": 0, "unit": "bodyweight", "reps": 12}, {"weight": 0, "unit": "bodyweight", "reps": 12}], "note": "每腿"},
-        {"id": "leg_curl", "name": "Leg Curl", "sets": [{"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}]}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "up from 25"
+        },
+        {
+          "id": "tricep_kickback",
+          "name": "Tricep Kickback",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Shoulder Press",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raise",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Tricep Pushdown",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "overhead_tricep_ext",
+          "name": "Overhead Cable Tricep Extension",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "deadlift",
+          "name": "Deadlift",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "PR vs 125"
+        },
+        {
+          "id": "step_ups",
+          "name": "Step-Ups",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 12
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 12
+            },
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 12
+            }
+          ],
+          "note": "每腿"
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        }
       ],
       "notes": "Upper (Jeff modified) + Lower 合并到同一 session。"
     },
@@ -289,8 +2339,50 @@
       "day_id": "lower_conditioning",
       "label": "Day 5 Lower (abbreviated, 状态差)",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlift (trap bar)", "sets": [{"weight": 155, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}, {"weight": 155, "unit": "lbs", "reps": 5}], "note": "hold 同 4/6"},
-        {"id": "rdl", "name": "RDL", "sets": [{"weight": 155, "unit": "lbs", "reps": 10}, {"weight": 155, "unit": "lbs", "reps": 10}], "note": "身体不行停了"}
+        {
+          "id": "deadlift",
+          "name": "Deadlift (trap bar)",
+          "sets": [
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "hold 同 4/6"
+        },
+        {
+          "id": "rdl",
+          "name": "RDL",
+          "sets": [
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "身体不行停了"
+        }
       ],
       "notes": "刚吃完火锅练，眼前发黑。教训：饭后至少 2 小时再练下肢。"
     },
@@ -300,9 +2392,71 @@
       "day_id": "legs",
       "label": "凌晨公寓 纯 DB 下肢",
       "exercises": [
-        {"id": "squat", "name": "Goblet Squat", "sets": [{"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}, {"weight": 50, "unit": "lbs", "reps": 12}]},
-        {"id": "rdl", "name": "DB RDL", "sets": [{"weight": 45, "unit": "lbs/hand", "reps": 10}, {"weight": 45, "unit": "lbs/hand", "reps": 10}, {"weight": 45, "unit": "lbs/hand", "reps": 10}], "note": "偏轻，下次顶到 50"},
-        {"id": "db_reverse_lunges", "name": "DB Reverse Lunges", "sets": [{"weight": 30, "unit": "lbs/hand", "reps": 10}, {"weight": 30, "unit": "lbs/hand", "reps": 10}, {"weight": 30, "unit": "lbs/hand", "reps": 10}], "note": "首次做，重量合适"}
+        {
+          "id": "squat",
+          "name": "Goblet Squat",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "rdl",
+          "name": "DB RDL",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs/hand",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/hand",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/hand",
+              "reps": 10
+            }
+          ],
+          "note": "偏轻，下次顶到 50"
+        },
+        {
+          "id": "db_reverse_lunges",
+          "name": "DB Reverse Lunges",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs/hand",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs/hand",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs/hand",
+              "reps": 10
+            }
+          ],
+          "note": "首次做，重量合适"
+        }
       ],
       "notes": "Recovery 59% 黄，凌晨 2 点练，公寓只有哑铃。"
     },
@@ -312,12 +2466,135 @@
       "day_id": "push",
       "label": "Day 1 Upper Body (pre-split)",
       "exercises": [
-        {"id": "lat_pulldown", "name": "Lat Pulldown (dual pulley)", "sets": [{"weight": 70, "unit": "lbs", "reps": 12, "note": "warmup"}, {"weight": 85, "unit": "lbs", "reps": 12}, {"weight": 85, "unit": "lbs", "reps": 12}]},
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 25, "unit": "lbs/side", "reps": 12}, {"weight": 25, "unit": "lbs/side", "reps": 12}, {"weight": 25, "unit": "lbs/side", "reps": 12}], "note": "轻松，下次加"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}]},
-        {"id": "one_arm_db_row", "name": "One-Arm DB Row", "sets": [{"weight": 40, "unit": "lbs", "reps": 10}, {"weight": 40, "unit": "lbs", "reps": 10}, {"weight": 40, "unit": "lbs", "reps": 10}]},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": [{"weight": 10, "unit": "lbs", "reps": 10}, {"weight": 10, "unit": "lbs", "reps": 10}, {"weight": 10, "unit": "lbs", "reps": 10}]},
-        {"id": "db_shoulder_press", "name": "DB Shoulder Press", "sets": [{"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 12}, {"weight": 25, "unit": "lbs", "reps": 12}], "note": "首次记录，下次试 27.5-30"}
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown (dual pulley)",
+          "sets": [
+            {
+              "weight": 70,
+              "unit": "lbs",
+              "reps": 12,
+              "note": "warmup"
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "轻松，下次加"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "one_arm_db_row",
+          "name": "One-Arm DB Row",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 10,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "DB Shoulder Press",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "首次记录，下次试 27.5-30"
+        }
       ],
       "notes": ""
     },
@@ -327,11 +2604,120 @@
       "day_id": "pull",
       "label": "Day 2 Pull",
       "exercises": [
-        {"id": "barbell_row", "name": "Barbell Row", "sets": [{"weight": 115, "unit": "lbs", "reps": 10}, {"weight": 115, "unit": "lbs", "reps": 10}, {"weight": 115, "unit": "lbs", "reps": 10}], "note": "首次记录，跳过 95 直接上 115"},
-        {"id": "seated_cable_row", "name": "Seated Cable Row (Dual Pulley)", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 10}, {"weight": 42.5, "unit": "lbs/side", "reps": 10}, {"weight": 42.5, "unit": "lbs/side", "reps": 10}]},
-        {"id": "barbell_curl", "name": "Barbell Curl", "sets": [{"weight": 45, "unit": "lbs", "reps": 10}, {"weight": 45, "unit": "lbs", "reps": 10}, {"weight": 45, "unit": "lbs", "reps": 7, "note": "rest-pause + 3"}]},
-        {"id": "hammer_curl", "name": "Hammer Curl", "sets": [{"weight": 25, "unit": "lbs", "reps": 10}, {"weight": 17.5, "unit": "lbs", "reps": 10}, {"weight": 15, "unit": "lbs", "reps": 10}, {"weight": 25, "unit": "lbs", "reps": 10, "note": "rest 后独立组"}], "note": "drop set"},
-        {"id": "face_pulls", "name": "Face Pulls", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 40, "unit": "lbs", "reps": 15}, {"weight": 35, "unit": "lbs", "reps": 15}]}
+        {
+          "id": "barbell_row",
+          "name": "Barbell Row",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "首次记录，跳过 95 直接上 115"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Row (Dual Pulley)",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs/side",
+              "reps": 10
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs/side",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curl",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 7,
+              "note": "rest-pause + 3"
+            }
+          ]
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curl",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 17.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10,
+              "note": "rest 后独立组"
+            }
+          ],
+          "note": "drop set"
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        }
       ],
       "notes": "Superset 同侧肌群不行，bicep 后 Hammer 25 起不来。下次 bicep 走 straight sets。"
     },
@@ -341,12 +2727,137 @@
       "day_id": "push",
       "label": "Push Day",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}], "note": "PR vs 4/27 +10 lbs/side"},
-        {"id": "db_shoulder_press", "name": "DB Shoulder Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}], "note": "PR vs 4/27 +10 lbs"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}]},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": [{"weight": 12.5, "unit": "lbs", "reps": 15}, {"weight": 12.5, "unit": "lbs", "reps": 15}, {"weight": 12.5, "unit": "lbs", "reps": 15}], "note": "+2.5 lbs + 5 reps vs 4/27"},
-        {"id": "tricep_pushdown", "name": "Tricep Pushdown", "sets": [{"weight": 35, "unit": "lbs", "reps": 15}, {"weight": 35, "unit": "lbs", "reps": 15}, {"weight": 35, "unit": "lbs", "reps": 15}], "note": "首次记录"},
-        {"id": "overhead_tricep_ext", "name": "Rope Overhead Tricep Ext", "sets": [{"weight": 27, "unit": "lbs", "reps": 12}, {"weight": 27, "unit": "lbs", "reps": 12}, {"weight": 27, "unit": "lbs", "reps": 12}], "note": "首次记录"}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "PR vs 4/27 +10 lbs/side"
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "DB Shoulder Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "PR vs 4/27 +10 lbs"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "+2.5 lbs + 5 reps vs 4/27"
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Tricep Pushdown",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "首次记录"
+        },
+        {
+          "id": "overhead_tricep_ext",
+          "name": "Rope Overhead Tricep Ext",
+          "sets": [
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "首次记录"
+        }
       ],
       "notes": "干净 Push day。Shoulder Press +10 lbs，Lateral Raises 同时加重加 reps，肩部 progression 漂亮。"
     },
@@ -356,13 +2867,283 @@
       "day_id": "push",
       "label": "Push Day (距上次 3 周多)",
       "exercises": [
-        {"id": "chest_press_machine", "name": "Chest Press Machine", "sets": [{"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}, {"weight": 35, "unit": "lbs/side", "reps": 12}], "note": "hold"},
-        {"id": "db_shoulder_press", "name": "DB Shoulder Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 8}, {"weight": 35, "unit": "lbs", "reps": 10}, {"weight": 35, "unit": "lbs", "reps": 6}], "note": "掉得明显"},
-        {"id": "incline_db_press", "name": "Incline DB Press", "sets": [{"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 12}, {"weight": 35, "unit": "lbs", "reps": 7}, {"weight": 35, "unit": "lbs", "reps": 6}]},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": [{"weight": 12.5, "unit": "lbs", "reps": 15}, {"weight": 12.5, "unit": "lbs", "reps": 15}, {"weight": 15, "unit": "lbs", "reps": 10}, {"weight": 15, "unit": "lbs", "reps": 10}], "note": "升重成功"},
-        {"id": "tricep_pushdown", "name": "Tricep Pushdown", "sets": [{"weight": 40, "unit": "lbs", "reps": 15}, {"weight": 40, "unit": "lbs", "reps": 15}, {"weight": 40, "unit": "lbs", "reps": 7}, {"weight": 40, "unit": "lbs", "reps": 5}], "note": "升重成功"}
+        {
+          "id": "chest_press_machine",
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "hold"
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "DB Shoulder Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ],
+          "note": "掉得明显"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline DB Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "升重成功"
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Tricep Pushdown",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "升重成功"
+        }
       ],
       "notes": "Push day 三周没练，Shoulder Press 第二组就掉。下次把 shoulder 提到 chest 前面 / 中间组休息加长。"
+    },
+    {
+      "date": "2026-05-27",
+      "day_id": "pull",
+      "label": "Pull Day (swapped from Legs — hiking 腿没恢复)",
+      "exercises": [
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown (dual pulley)",
+          "sets": [
+            {
+              "weight": 85,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "断档三个月一次爬回 100×10，基本满血（3/2 顶峰 105×10）。Jeff 之前抠 form 才降到 85。"
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Row",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "维持 115×3×10，跟 4/28 一致。"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Row (Dual Pulley)",
+          "sets": [
+            {
+              "weight": 47.5,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 47.5,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 47.5,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "从 42.5 升到 47.5/side 还收满 12，退步最久的动作往回追。"
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "sets": [
+            {
+              "weight": 47.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 43,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "descending set，比上次 40 高一档。47.5 拉满 15 可能借了点后倾的力，下次回 40 做干净。"
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curl",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "维持 45×3×10，最后几个 jerky（前面背练在前耗了二头）。"
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curl",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 4
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ],
+          "note": "25 掉得快降到 20，排在 pull 最后前臂已空。"
+        }
+      ],
+      "notes": "本该 Legs，但 Hurricane Ridge hiking 腿没恢复完 + 昨天 push，换成 Pull 补最近黑洞。背三主项全在涨（lat pulldown 满血、cable row 升重、barbell row 维持）。Whoop 两段 strain ~14。",
+      "weekday": "Wed"
     }
   ]
 }
