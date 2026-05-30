@@ -3144,6 +3144,194 @@
       ],
       "notes": "本该 Legs，但 Hurricane Ridge hiking 腿没恢复完 + 昨天 push，换成 Pull 补最近黑洞。背三主项全在涨（lat pulldown 满血、cable row 升重、barbell row 维持）。Whoop 两段 strain ~14。",
       "weekday": "Wed"
+    },
+    {
+      "date": "2026-05-28",
+      "day_id": "legs",
+      "label": "Legs Day (with Jeff)",
+      "exercises": [
+        {
+          "id": "squat",
+          "name": "Shark Squat (machine)",
+          "sets": [
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "机器自重另约 15 lbs，有效 ~175。第一次记腿训练，无 baseline。"
+        },
+        {
+          "id": "rdl",
+          "name": "DB Romanian Deadlift",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs/hand",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs/hand",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs/hand",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "leg_press",
+          "name": "Single-Leg Leg Press",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "单腿，左腿偏弱最后几个吃力。"
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "sets": [
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "腿已炸。"
+        },
+        {
+          "id": "walking_lunges",
+          "name": "Walking Lunges",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 10
+            }
+          ],
+          "note": "自重 10/腿 x 1 组收尾。"
+        }
+      ],
+      "notes": "跟 Jeff 第一次记腿。Whoop Strain 11.7，平均 HR 130，峰值 165，556 kcal。",
+      "weekday": "Thu"
+    },
+    {
+      "date": "2026-05-29",
+      "day_id": "upper",
+      "label": "Upper Day",
+      "exercises": [
+        {
+          "id": "incline_bb_press",
+          "name": "Incline BB Press",
+          "sets": [
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 95,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "断档三个月回归，比 2/26 的 95x4x8 进步，首尾两组冲到 10。"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "很吃力，最后几个基本硬掰，下次减重量。"
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 7
+            }
+          ],
+          "note": "后面两个很吃力，动作走形。"
+        }
+      ],
+      "notes": "Upper day。卡丁车 4 session 之后练的。",
+      "weekday": "Fri"
     }
   ]
 }

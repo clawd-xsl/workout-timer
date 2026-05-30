@@ -306,6 +306,36 @@
         }
       ],
       "notes": "刷脂模式第二天，蛋白达标。"
+    },
+    {
+      "date": "2026-05-28",
+      "meals": [
+        {
+          "time": "lunch",
+          "desc": "Chipotle brown rice bowl: double chicken + steak + 生菜 (练前餐)",
+          "protein_g": 85,
+          "calories": 720
+        },
+        {
+          "time": "breakfast",
+          "desc": "2 scoops ON whey protein",
+          "protein_g": 48,
+          "calories": 240
+        },
+        {
+          "time": "snack",
+          "desc": "4 egg whites (no yolk) + steak cup (~50g)",
+          "protein_g": 27,
+          "calories": 180
+        },
+        {
+          "time": "dinner",
+          "desc": "Chipotle bowl: less brown rice, more lettuce, double protein (pork + steak)",
+          "protein_g": 44,
+          "calories": 460
+        }
+      ],
+      "notes": "两点跟 Jeff 练，练前餐。嫌油（Chipotle 炒制挂油）。"
     }
   ]
 }
