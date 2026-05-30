@@ -3328,9 +3328,75 @@
             }
           ],
           "note": "后面两个很吃力，动作走形。"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 12.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "超级组第一个动作，3组都做满。"
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curl",
+          "sets": [
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ],
+          "note": "超级组，第二组掉到6-7个，第三组减到20磅做5-6个。"
+        },
+        {
+          "id": "db_biceps_curl",
+          "name": "Dumbbell Biceps Curl",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 5
+            }
+          ],
+          "note": "超级组收尾动作（旋后弯举），排最后被耗空，20磅4-7个递减。"
         }
       ],
-      "notes": "Upper day。卡丁车 4 session 之后练的。",
+      "notes": "Upper day。卡丁车 4 session 之后练的。收尾 lateral raise + hammer curl + biceps curl 三连超级组。",
       "weekday": "Fri"
     }
   ]
