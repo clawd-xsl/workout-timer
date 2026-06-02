@@ -3398,6 +3398,162 @@
       ],
       "notes": "Upper day。卡丁车 4 session 之后练的。收尾 lateral raise + hammer curl + biceps curl 三连超级组。",
       "weekday": "Fri"
+    },
+    {
+      "date": "2026-06-01",
+      "day_id": "push",
+      "label": "Push Day",
+      "exercises": [
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 115,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ],
+          "note": "断三个月回归，三组全做满6，比3/2进步"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline Dumbbell Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "三组全做满12，进步"
+        },
+        {
+          "id": "shoulder_press",
+          "name": "Shoulder Press (DB)",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "首次记录。第一组7后两组稳到10。"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "重量和次数双升（上次12.5×3×12），中束进步明显"
+        },
+        {
+          "id": "triceps_pushdowns",
+          "name": "Triceps Pushdowns",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 4
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 2
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 1
+            }
+          ],
+          "note": "第二组升到42.5做满15。第三组rest-pause（15s间隔）：8/4/2/1，第一次试rest-pause执行标准"
+        },
+        {
+          "id": "overhead_triceps_ext",
+          "name": "Overhead Triceps Extensions (cable rope)",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "note": "cable rope放最高滑轮。补三头长头拉伸位，赤字期轻重量做满次数"
+        }
+      ],
+      "notes": "Push day。断档三个月后第一次回平板卧推，全场进步或持平。Triceps收尾试rest-pause。",
+      "weekday": "Mon"
     }
   ]
 }

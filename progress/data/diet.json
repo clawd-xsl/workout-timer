@@ -336,6 +336,29 @@
         }
       ],
       "notes": "两点跟 Jeff 练，练前餐。嫌油（Chipotle 炒制挂油）。"
+    },
+    {
+      "date": "2026-05-29",
+      "meals": [
+        {
+          "time": "lunch",
+          "desc": "Chipotle bowl: less brown rice + double protein (chicken+steak) + 生菜",
+          "protein_g": 82,
+          "calories": 700
+        },
+        {
+          "time": "dinner",
+          "desc": "川菜 with 朋友 (分食): 回锅肉, 韭菜炒蛋, 麻辣鱼片, 羊排, 豆腐煲, 腰花",
+          "protein_g": 55,
+          "calories": 900
+        },
+        {
+          "time": "breakfast",
+          "desc": "2 scoops ON whey + 1 scoop creatine",
+          "protein_g": 48,
+          "calories": 240
+        }
+      ]
     }
   ]
 }
