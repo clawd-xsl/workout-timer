@@ -3554,6 +3554,125 @@
       ],
       "notes": "Push day。断档三个月后第一次回平板卧推，全场进步或持平。Triceps收尾试rest-pause。",
       "weekday": "Mon"
+    },
+    {
+      "date": "2026-06-02",
+      "day_id": "pull",
+      "label": "Pull Day",
+      "weekday": "Tue",
+      "exercises": [
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 90.3,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90.3,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90.3,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "回到90磅，扎实满程，比上次硬掰100强"
+        },
+        {
+          "id": "barbell_rows",
+          "name": "Barbell Rows",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "比上次115跳20磅(45/side+45杆)，有点勉强，下次维持135别加"
+        },
+        {
+          "id": "seated_cable_rows",
+          "name": "Seated Cable Rows (close-grip)",
+          "sets": [
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "dual pulley被占，临时做窄距单柄90lbs；二头代偿明显，下次能用dual回47.5/side"
+        },
+        {
+          "id": "reverse_pec_deck",
+          "name": "Reverse Pec Deck Fly (face pull替代)",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "面拉绳子被占改用反向飞鸟机；后束感受比面拉好太多(面拉全身借力)，决定以后pull day直接用reverse fly替面拉。第一组50偏冲，后两组40"
+        },
+        {
+          "id": "barbell_curls",
+          "name": "Barbell Curls",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "从上次3×10提到3×12，进步"
+        }
+      ],
+      "notes": "Pull day。Lat pulldown回90做扎实；barbell row冲到135略勉强；cable row因dual被占做窄距;face pull改reverse pec deck感受更好(以后固定替换);barbell curl涨到3×12。Hammer curl没做——健身房关门了。"
     }
   ]
 }
