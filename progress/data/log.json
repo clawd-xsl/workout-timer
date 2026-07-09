@@ -5176,6 +5176,148 @@
       ],
       "notes": "攀岩代替 lower+conditioning",
       "weekday": "Sat"
+    },
+    {
+      "date": "2026-07-08",
+      "day_id": "pull",
+      "label": "Pull Day",
+      "exercises": [
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Rows",
+          "sets": [
+            {
+              "weight": 145,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 145,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 145,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "145 3x12 很勉强，行程做不满（ROM 打折）"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Rows",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "reverse_fly_machine",
+          "name": "Reverse Fly (Machine)",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "做着没感觉，哪都没发力没酸没力竭，就是抬不起来了——可能代偿/发力模式问题"
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curls",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "sets": [
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        }
+      ],
+      "weekday": "Wed",
+      "note": "二头两个动作组间休息拉很长，加起来约半小时，基本做满。"
     }
   ]
 }
