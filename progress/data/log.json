@@ -3673,6 +3673,1509 @@
         }
       ],
       "notes": "Pull day。Lat pulldown回90做扎实；barbell row冲到135略勉强；cable row因dual被占做窄距;face pull改reverse pec deck感受更好(以后固定替换);barbell curl涨到3×12。Hammer curl没做——健身房关门了。"
+    },
+    {
+      "date": "2026-06-04",
+      "day_id": "upper",
+      "exercises": [
+        {
+          "id": "incline_bench_press",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 9
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "DB incline, hypertrophy volume day",
+          "name": "Incline Dumbbell Press",
+          "exercise_id": "incline_db_press"
+        },
+        {
+          "id": "lat_pulldown",
+          "sets": [
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "name": "Lat Pulldown",
+          "exercise_id": "lat_pulldown"
+        },
+        {
+          "id": "db_shoulder_press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 9
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 7
+            }
+          ],
+          "note": "腹肌借力比较多，核心代偿",
+          "name": "Shoulder Press",
+          "exercise_id": "shoulder_press"
+        }
+      ],
+      "weekday": "Thu"
+    },
+    {
+      "date": "2026-06-04",
+      "day_id": "upper",
+      "exercises": [
+        {
+          "id": "cable_flys",
+          "sets": [
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "每边27磅，第一次做",
+          "name": "Hammer Curls",
+          "exercise_id": "hammer_curl"
+        },
+        {
+          "id": "lateral_raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "name": "Lateral Raises",
+          "exercise_id": "lateral_raises"
+        },
+        {
+          "id": "barbell_curl",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "superset with skull crushers, 偏轻松",
+          "name": "Barbell Curls",
+          "exercise_id": "barbell_curl"
+        },
+        {
+          "id": "skull_crushers",
+          "sets": [
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 22.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "superset with bb curl, 比较适中",
+          "name": "Skull Crushers / Overhead Triceps",
+          "exercise_id": "overhead_tricep_ext"
+        }
+      ],
+      "weekday": "Thu"
+    },
+    {
+      "date": "2026-06-08",
+      "day_id": "push",
+      "exercises": [
+        {
+          "id": "chest_press_machine",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            }
+          ],
+          "name": "Incline Dumbbell Press",
+          "exercise_id": "incline_db_press"
+        },
+        {
+          "id": "incline_db_press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "name": "Shoulder Press",
+          "exercise_id": "shoulder_press"
+        },
+        {
+          "id": "shoulder_press_db",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 2
+            }
+          ],
+          "name": "DB Shoulder Press",
+          "exercise_id": "shoulder_press"
+        },
+        {
+          "id": "lateral_raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "name": "Lateral Raises",
+          "exercise_id": "lateral_raises"
+        },
+        {
+          "id": "triceps_pushdowns",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "name": "Triceps Pushdowns",
+          "exercise_id": "tricep_pushdown"
+        }
+      ],
+      "note": "Replaced bench with chest press machine (left/right imbalance). Skipped overhead triceps extensions. Last sets of pushdowns felt crampy/depleted, dropped weight. Recovery 39% red zone, low calorie day.",
+      "weekday": "Mon"
+    },
+    {
+      "date": "2026-06-09",
+      "day_id": "pull",
+      "exercises": [
+        {
+          "id": "lat_pulldown",
+          "sets": [
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 90,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "第一次按plan做满4组。100做到12但form不到位，后半肩/二头/斜方代偿——很久以前就能做100，之前是纠form才降的。下次回90×4组打干净form",
+          "name": "Lat Pulldown",
+          "exercise_id": "lat_pulldown"
+        },
+        {
+          "id": "barbell_row",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15,
+              "per_side": true
+            }
+          ],
+          "note": "每边45（总135），比上次115加重还多做，最后一组15个",
+          "name": "Barbell Rows",
+          "exercise_id": "barbell_row"
+        },
+        {
+          "id": "seated_cable_row",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            }
+          ],
+          "note": "上次记录修正：实际是42.5+5lbs配重块≈45/side。今天45干净3×12，下次试47.5",
+          "name": "Seated Cable Rows",
+          "exercise_id": "seated_cable_row"
+        },
+        {
+          "id": "reverse_pec_deck",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "note": "肘顶式机器（无握把）。后束断电式力竭~10个，无乳酸感，小肌群正常",
+          "name": "Reverse Pec Deck Fly",
+          "exercise_id": "reverse_pec_deck"
+        },
+        {
+          "id": "barbell_curl",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 7
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "第一组45×12把二头榨干，第二组45只有5个降40再7个，第三组歇够40×12。45还hold不住三组 | drop set: 45 x 5 + 40 x 7",
+          "name": "Barbell Curls",
+          "exercise_id": "barbell_curl"
+        },
+        {
+          "id": "hammer_curl",
+          "sets": [
+            {
+              "weight": 27.5,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "note": "superset第一轮27.5只做5个马上换20。后面放弃superset改间歇做 | drop set: 27.5 x 5 + 20 x 10",
+          "name": "Hammer Curls",
+          "exercise_id": "hammer_curl"
+        }
+      ],
+      "note": "Pull day。背部量超额（pulldown满4组+划船加重20磅），二头后程崩快。superset尝试：row和reverse fly器械太远放弃，curl对没扛住改间歇",
+      "weekday": "Tue"
+    },
+    {
+      "date": "2026-06-16",
+      "day_id": "pull",
+      "label": "Pull Day",
+      "exercises": [
+        {
+          "name": "Lat Pulldown (dual pulley)",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "id": "lat_pulldown"
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Rows",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Rows",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs/side",
+              "reps": 12
+            }
+          ],
+          "note": "下次目标涨volume到3×15，机器选不出47.5"
+        },
+        {
+          "id": "reverse_pec_deck",
+          "name": "Reverse Pec Deck Fly",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curls",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 2,
+              "note": "力竭，drop to 20"
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 10,
+              "note": "drop set"
+            }
+          ]
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "sets": [
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        }
+      ],
+      "notes": "健身房快关门了，barbell curl和hammer curl交替做。Reverse pec deck第一组冲到50，进步明显。",
+      "weekday": "Tue"
+    },
+    {
+      "date": "2026-06-17",
+      "plan": "Jeff Fit Factory PPL+Upper+Lower",
+      "exercises": [
+        {
+          "id": "squat",
+          "name": "Belt Squat",
+          "notes": "机器 starting weight 68lbs，腰带挂着腰疼",
+          "sets": [
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "rdl",
+          "name": "BB Romanian Deadlift",
+          "sets": [
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "leg_press",
+          "name": "Leg Press (single leg)",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs/leg",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs/leg",
+              "reps": 12
+            },
+            {
+              "weight": 100,
+              "unit": "lbs/leg",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curls",
+          "notes": "做了两组就关门了",
+          "sets": [
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 65,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "calf_raise",
+          "name": "Calf Raises",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        }
+      ],
+      "weekday": "Wed",
+      "day_id": "legs"
+    },
+    {
+      "date": "2026-06-21",
+      "day_id": "push",
+      "weekday": "Sun",
+      "exercises": [
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "exercise_id": "bench_press",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 18,
+              "per_side": true
+            }
+          ]
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline Dumbbell Press",
+          "exercise_id": "incline_db_press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "shoulder_press",
+          "name": "Shoulder Press (DB)",
+          "exercise_id": "shoulder_press",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "exercise_id": "lateral_raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Triceps Pushdowns",
+          "exercise_id": "tricep_pushdown",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "overhead_tricep_ext",
+          "name": "Overhead Triceps Extensions",
+          "exercise_id": "overhead_tricep_ext",
+          "sets": [
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        }
+      ],
+      "note": "Sunday补Push day。Bench 45/边第三组18个有余力可加重。Tricep pushdowns比上次进步（全程40没降重）。Overhead ext只做一组gym关门了。"
+    },
+    {
+      "date": "2026-06-23",
+      "day_id": "pull",
+      "weekday": "Tue",
+      "exercises": [
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "exercise_id": "lat_pulldown",
+          "sets": [
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 42.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Rows",
+          "exercise_id": "barbell_row",
+          "sets": [
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 135,
+              "unit": "lbs",
+              "reps": 16
+            }
+          ]
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Rows",
+          "exercise_id": "seated_cable_row",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "reverse_pec_deck",
+          "name": "Reverse Fly (Machine)",
+          "exercise_id": "reverse_pec_deck",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curls",
+          "exercise_id": "barbell_curl",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "machine_squat",
+          "name": "Machine Squat",
+          "exercise_id": "machine_squat",
+          "sets": [
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 160,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "exercise_id": "hammer_curl",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 20,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curl",
+          "exercise_id": "leg_curl",
+          "sets": [
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "exercises": [
+        {
+          "id": "deadlift",
+          "name": "Conventional Deadlift",
+          "sets": [
+            {
+              "weight": 185,
+              "unit": "lbs",
+              "reps": 5
+            },
+            {
+              "weight": 185,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 185,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ]
+        },
+        {
+          "id": "rdl",
+          "name": "BB Romanian Deadlift",
+          "sets": [
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 155,
+              "unit": "lbs",
+              "reps": 8
+            }
+          ],
+          "notes": "grip gives out around rep 7-8, need straps or mixed grip"
+        },
+        {
+          "id": "leg_press",
+          "name": "Leg Press (single leg)",
+          "sets": [
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            },
+            {
+              "weight": 100,
+              "unit": "lbs",
+              "reps": 12,
+              "per_side": true
+            }
+          ]
+        },
+        {
+          "id": "walking_lunge",
+          "name": "Walking Lunges",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 20
+            },
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 20
+            },
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 20
+            }
+          ]
+        },
+        {
+          "id": "captain_chair_knee_raise",
+          "name": "Captain's Chair Knee Raises",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ],
+          "notes": "gym closed, only 1 set"
+        }
+      ],
+      "weekday": "Wed",
+      "day_id": "legs"
+    },
+    {
+      "date": "2026-06-25",
+      "exercises": [
+        {
+          "id": "incline_machine_bench",
+          "name": "Incline Machine Bench Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ],
+          "notes": "incline bench occupied, used machine instead"
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": [
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 52.5,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ],
+          "notes": "third set skipped, machine occupied"
+        },
+        {
+          "id": "cable_fly",
+          "name": "Cable Fly",
+          "sets": [
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 27,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 23,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "id": "db_bicep_curl",
+          "name": "Dumbbell Bicep Curl",
+          "sets": [
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 6
+            },
+            {
+              "weight": 25,
+              "unit": "lbs",
+              "reps": 6
+            }
+          ]
+        },
+        {
+          "id": "tricep_extension",
+          "name": "Tricep Extension (Machine)",
+          "sets": [
+            {
+              "weight": 70,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 70,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        }
+      ],
+      "weekday": "Thu",
+      "day_id": "upper"
+    },
+    {
+      "date": "2026-06-29",
+      "exercises": [
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": [
+            {
+              "weight": 45,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            }
+          ]
+        },
+        {
+          "id": "incline_barbell_press",
+          "name": "Incline Barbell Press",
+          "sets": [
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 6,
+              "per_side": true
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 6,
+              "per_side": true
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 5,
+              "per_side": true
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 5,
+              "per_side": true
+            },
+            {
+              "weight": 35,
+              "unit": "lbs",
+              "reps": 6,
+              "per_side": true
+            }
+          ]
+        },
+        {
+          "id": "shoulder_press_machine",
+          "name": "Shoulder Press Machine",
+          "sets": [
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 60,
+              "unit": "lbs",
+              "reps": 9
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 50,
+              "unit": "lbs",
+              "reps": 10
+            }
+          ]
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 15,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Triceps Pushdowns",
+          "sets": [
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 12
+            },
+            {
+              "weight": 40,
+              "unit": "lbs",
+              "reps": 8
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        },
+        {
+          "id": "overhead_tricep_ext",
+          "name": "Overhead Triceps Extensions",
+          "sets": [
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 15
+            },
+            {
+              "weight": 30,
+              "unit": "lbs",
+              "reps": 15
+            }
+          ]
+        }
+      ],
+      "weekday": "Mon",
+      "day_id": "push"
+    },
+    {
+      "date": "2026-06-27",
+      "day_id": "lower_conditioning",
+      "label": "Climbing",
+      "exercises": [
+        {
+          "id": "climbing",
+          "name": "Rock Climbing (bouldering)",
+          "sets": [
+            {
+              "weight": 0,
+              "unit": "bodyweight",
+              "reps": 1,
+              "note": "Whoop strain 12.2, HR avg 113 / peak 150, 238 cal"
+            }
+          ]
+        }
+      ],
+      "notes": "攀岩代替 lower+conditioning",
+      "weekday": "Sat"
     }
   ]
 }

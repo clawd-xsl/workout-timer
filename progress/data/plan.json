@@ -16,12 +16,42 @@
       "weekday": "Monday",
       "focus": "Controlled reps, full stretch, don't rush.",
       "exercises": [
-        {"id": "bench_press", "name": "Bench Press", "sets": 4, "reps": "6-10"},
-        {"id": "incline_db_press", "name": "Incline Dumbbell Press", "sets": 3, "reps": "8-12"},
-        {"id": "shoulder_press", "name": "Shoulder Press (DB or Barbell)", "sets": 3, "reps": "8-12"},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": 3, "reps": "12-15"},
-        {"id": "tricep_pushdown", "name": "Triceps Pushdowns", "sets": 3, "reps": "10-15"},
-        {"id": "overhead_tricep_ext", "name": "Overhead Triceps Extensions", "sets": 3, "reps": "10-12"}
+        {
+          "id": "bench_press",
+          "name": "Bench Press",
+          "sets": 4,
+          "reps": "6-10"
+        },
+        {
+          "id": "incline_db_press",
+          "name": "Incline Dumbbell Press",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "shoulder_press",
+          "name": "Shoulder Press (DB or Barbell)",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": 3,
+          "reps": "12-15"
+        },
+        {
+          "id": "tricep_pushdown",
+          "name": "Triceps Pushdowns",
+          "sets": 3,
+          "reps": "10-15"
+        },
+        {
+          "id": "overhead_tricep_ext",
+          "name": "Overhead Triceps Extensions",
+          "sets": 3,
+          "reps": "10-12"
+        }
       ]
     },
     "pull": {
@@ -29,12 +59,49 @@
       "weekday": "Tuesday",
       "focus": "Squeeze your back muscles — don't just move weight.",
       "exercises": [
-        {"id": "pull_ups", "name": "Pull-ups (or Lat Pulldown)", "sets": 4, "reps": "6-10"},
-        {"id": "barbell_row", "name": "Barbell Rows", "sets": 3, "reps": "8-12"},
-        {"id": "seated_cable_row", "name": "Seated Cable Rows", "sets": 3, "reps": "10-12"},
-        {"id": "face_pulls", "name": "Face Pulls", "sets": 3, "reps": "12-15"},
-        {"id": "barbell_curl", "name": "Barbell Curls", "sets": 3, "reps": "8-12"},
-        {"id": "hammer_curl", "name": "Hammer Curls", "sets": 3, "reps": "10-12"}
+        {
+          "id": "pull_ups",
+          "name": "Pull-ups",
+          "sets": 4,
+          "reps": "6-10"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": 4,
+          "reps": "6-10"
+        },
+        {
+          "id": "barbell_row",
+          "name": "Barbell Rows",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "seated_cable_row",
+          "name": "Seated Cable Rows",
+          "sets": 3,
+          "reps": "10-12"
+        },
+        {
+          "id": "reverse_pec_deck",
+          "name": "Reverse Pec Deck Fly (后束)",
+          "sets": 3,
+          "reps": "12-15",
+          "note": "原Face Pulls；Shanli面拉全身借力感受差，改用反向飞鸟机孤立后束"
+        },
+        {
+          "id": "barbell_curl",
+          "name": "Barbell Curls",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "hammer_curl",
+          "name": "Hammer Curls",
+          "sets": 3,
+          "reps": "10-12"
+        }
       ]
     },
     "legs": {
@@ -42,11 +109,36 @@
       "weekday": "Wednesday",
       "focus": "Go hard — legs burn the most calories and boost fat loss.",
       "exercises": [
-        {"id": "squat", "name": "Squats", "sets": 4, "reps": "6-10"},
-        {"id": "rdl", "name": "Romanian Deadlifts", "sets": 3, "reps": "8-12"},
-        {"id": "leg_press", "name": "Leg Press", "sets": 3, "reps": "10-15"},
-        {"id": "leg_curl", "name": "Leg Curls", "sets": 3, "reps": "10-15"},
-        {"id": "calf_raises", "name": "Calf Raises", "sets": 4, "reps": "12-20"}
+        {
+          "id": "squat",
+          "name": "Squats",
+          "sets": 4,
+          "reps": "6-10"
+        },
+        {
+          "id": "rdl",
+          "name": "Romanian Deadlifts",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "leg_press",
+          "name": "Leg Press",
+          "sets": 3,
+          "reps": "10-15"
+        },
+        {
+          "id": "leg_curl",
+          "name": "Leg Curls",
+          "sets": 3,
+          "reps": "10-15"
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises",
+          "sets": 4,
+          "reps": "12-20"
+        }
       ]
     },
     "upper": {
@@ -54,12 +146,42 @@
       "weekday": "Thursday",
       "focus": "Lighter weight, more volume, more burn.",
       "exercises": [
-        {"id": "incline_bench", "name": "Incline Bench Press", "sets": 3, "reps": "8-12"},
-        {"id": "lat_pulldown", "name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
-        {"id": "db_shoulder_press", "name": "Dumbbell Shoulder Press", "sets": 3, "reps": "10-12"},
-        {"id": "cable_fly", "name": "Cable Flys", "sets": 3, "reps": "12-15"},
-        {"id": "lateral_raises", "name": "Lateral Raises", "sets": 3, "reps": "15"},
-        {"id": "bicep_tricep_superset", "name": "Biceps + Triceps Superset", "sets": 3, "reps": "superset"}
+        {
+          "id": "incline_bench",
+          "name": "Incline Bench Press",
+          "sets": 3,
+          "reps": "8-12"
+        },
+        {
+          "id": "lat_pulldown",
+          "name": "Lat Pulldown",
+          "sets": 3,
+          "reps": "10-12"
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "Dumbbell Shoulder Press",
+          "sets": 3,
+          "reps": "10-12"
+        },
+        {
+          "id": "cable_fly",
+          "name": "Cable Flys",
+          "sets": 3,
+          "reps": "12-15"
+        },
+        {
+          "id": "lateral_raises",
+          "name": "Lateral Raises",
+          "sets": 3,
+          "reps": "15"
+        },
+        {
+          "id": "bicep_tricep_superset",
+          "name": "Biceps + Triceps Superset",
+          "sets": 3,
+          "reps": "superset"
+        }
       ]
     },
     "lower_conditioning": {
@@ -67,11 +189,36 @@
       "weekday": "Friday",
       "focus": "Finish with 15-20 min incline walking OR 10-15 min HIIT.",
       "exercises": [
-        {"id": "deadlift", "name": "Deadlifts", "sets": 3, "reps": "5-8"},
-        {"id": "walking_lunges", "name": "Walking Lunges", "sets": 3, "reps": "12 each leg"},
-        {"id": "leg_extensions", "name": "Leg Extensions", "sets": 3, "reps": "12-15"},
-        {"id": "hamstring_curls", "name": "Hamstring Curls", "sets": 3, "reps": "12-15"},
-        {"id": "calf_raises", "name": "Calf Raises", "sets": 3, "reps": "15-20"}
+        {
+          "id": "deadlift",
+          "name": "Deadlifts",
+          "sets": 3,
+          "reps": "5-8"
+        },
+        {
+          "id": "walking_lunges",
+          "name": "Walking Lunges",
+          "sets": 3,
+          "reps": "12 each leg"
+        },
+        {
+          "id": "leg_extensions",
+          "name": "Leg Extensions",
+          "sets": 3,
+          "reps": "12-15"
+        },
+        {
+          "id": "hamstring_curls",
+          "name": "Hamstring Curls",
+          "sets": 3,
+          "reps": "12-15"
+        },
+        {
+          "id": "calf_raises",
+          "name": "Calf Raises",
+          "sets": 3,
+          "reps": "15-20"
+        }
       ]
     },
     "rest": {

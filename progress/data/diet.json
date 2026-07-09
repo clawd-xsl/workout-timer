@@ -359,6 +359,292 @@
           "calories": 240
         }
       ]
+    },
+    {
+      "date": "2026-06-02",
+      "meals": [
+        {
+          "time": "lunch",
+          "desc": "Chipotle bowl: double protein (chicken+steak) + brown rice + lettuce",
+          "protein_g": 57,
+          "calories": 545
+        },
+        {
+          "time": "dinner",
+          "desc": "Chipotle bowl: double protein (chicken+steak) + brown rice + lettuce",
+          "protein_g": 57,
+          "calories": 545
+        },
+        {
+          "time": "breakfast",
+          "desc": "2 scoops ON whey protein",
+          "protein_g": 48,
+          "calories": 240
+        },
+        {
+          "time": "snack",
+          "desc": "藕片脆片 x3 包 (国产小零食)",
+          "protein_g": 3,
+          "calories": 287
+        },
+        {
+          "time": "snack",
+          "desc": "香蕉 1 根",
+          "protein_g": 1,
+          "calories": 105
+        }
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "Chipotle bowl double protein chicken+steak, brown rice, lettuce",
+          "protein_g": 85,
+          "calories": 720
+        },
+        {
+          "meal": "snack",
+          "desc": "2 scoops ON whey protein + creatine",
+          "protein_g": 48,
+          "calories": 240
+        }
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "Chipotle chicken bowl + extra steak, brown rice, lettuce",
+          "protein_g": 60,
+          "calories": 545
+        },
+        {
+          "meal": "dinner",
+          "desc": "Chipotle chicken bowl + extra steak, brown rice, lettuce",
+          "protein_g": 60,
+          "calories": 545
+        },
+        {
+          "meal": "breakfast",
+          "desc": "2 scoops ON whey protein + creatine",
+          "protein_g": 48,
+          "calories": 240
+        }
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "Chipotle bowl chicken+steak+brown rice+lettuce",
+          "protein_g": 60,
+          "calories": 550
+        },
+        {
+          "meal": "snack",
+          "desc": "2 scoops whey protein + 1 scoop creatine",
+          "protein_g": 50,
+          "calories": 240
+        },
+        {
+          "meal": "dinner",
+          "desc": "刺身拼盘 16片 (salmon, tuna, hamachi, tai, saba/aji, amaebi) + 蟹肉",
+          "protein_g": 55,
+          "calories": 500
+        },
+        {
+          "meal": "dinner",
+          "desc": "Hamachi kama 鰤鱼头盐烤 1/3份",
+          "protein_g": 17,
+          "calories": 130
+        }
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "meals": [
+        {
+          "meal": "dinner",
+          "desc": "Chipotle chicken bowl: romaine lettuce, no beans, light brown rice, extra steak",
+          "calories": 550,
+          "protein_g": 57
+        },
+        {
+          "meal": "breakfast",
+          "desc": "两勺蛋白粉+肌酸+一根香蕉",
+          "calories": 310,
+          "protein_g": 52
+        }
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "meals": [
+        {
+          "meal": "lunch",
+          "description": "Chipotle chicken bowl + extra steak, brown rice, romaine lettuce, no beans",
+          "protein_g": 57,
+          "calories": 550
+        },
+        {
+          "meal": "dinner",
+          "calories": 850,
+          "protein_g": 38,
+          "description": "一碗米饭 + 一个蹄花 + 2/3碗豆花"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "meals": [
+        {
+          "meal": "dinner",
+          "description": "半份皮蛋瘦肉粥(约2.5小碗) + 白灼肝腰一份(蘸酱油醋) + 小份牛腩云吞面(吃了2/3)",
+          "protein_g": 60,
+          "calories": 880
+        }
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "韩式芝士牛腩牛筋牛骨锅 share，约十来块肉 + 一碗米饭",
+          "protein_g": 35,
+          "calories": 650
+        },
+        {
+          "meal": "dinner",
+          "desc": "Chipotle bowl double protein chicken+steak + brown rice + lettuce",
+          "protein_g": 60,
+          "calories": 550
+        }
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "meals": [
+        {}
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "拆骨肉荷包蛋+小炒肉, 150g生米煮饭",
+          "calories": 950,
+          "protein_g": 45
+        },
+        {
+          "meal": "snack",
+          "desc": "ON Whey 蛋白粉 2勺",
+          "calories": 240,
+          "protein_g": 48
+        }
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "公司午饭：两个meatball + 米饭 + 蔬菜",
+          "calories": 470,
+          "protein_g": 30
+        },
+        {
+          "meal": "dinner",
+          "desc": "蘸面一份 + 一颗蛋 + 两片厚叉烧 + 三块chicken karaage",
+          "calories": 850,
+          "protein_g": 55
+        },
+        {
+          "meal": "snack",
+          "desc": "一个苹果 + 一小袋开心果 + 一包薯片",
+          "calories": 400,
+          "protein_g": 8
+        }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "meals": [
+        {
+          "meal": "breakfast",
+          "desc": "两勺蛋白粉+肌酸",
+          "calories": 240,
+          "protein_g": 48
+        },
+        {
+          "meal": "lunch",
+          "desc": "公司BBQ buffet: 半片吐司, 一勺猪肉, 一根牛肋, 一块烤鸡胸",
+          "calories": 500,
+          "protein_g": 60
+        },
+        {
+          "meal": "dinner",
+          "desc": "卤肉饭+extra卤肉, 盐酥鸡一份, 半份凤梨虾球",
+          "calories": 1200,
+          "protein_g": 67
+        },
+        {
+          "meal": "snack",
+          "desc": "turkey jerky一份, 小袋开心果, 苹果",
+          "calories": 300,
+          "protein_g": 20
+        }
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "meals": [
+        {
+          "meal": "brunch",
+          "desc": "Salmon Toast - smoked salmon, sourdough, lemon, micro greens",
+          "protein_g": 25,
+          "calories": 500
+        },
+        {
+          "meal": "snack",
+          "desc": "ON Whey 蛋白粉 x3 scoops",
+          "protein_g": 72,
+          "calories": 360
+        }
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "meals": [
+        {
+          "meal": "lunch",
+          "desc": "牛肉饭一碗 (AX会场)",
+          "calories": 650,
+          "protein_g": 25
+        },
+        {
+          "meal": "dinner",
+          "desc": "烤鱿鱼一大只 (AX会场)",
+          "calories": 300,
+          "protein_g": 30
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "meals": [
+        {
+          "meal": "snack",
+          "desc": "麦当劳夜宵 (ANIBASH散场后, 具体不详)",
+          "protein_g": 25,
+          "calories": 800
+        }
+      ]
     }
   ]
 }
